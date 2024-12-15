@@ -198,7 +198,8 @@ header ul li a {
 
 
 section {
-    padding: 74px 16px;
+    padding: 74px 0px;
+    padding-top: 0;
 }
 
 .hero {
@@ -760,6 +761,7 @@ section {
     justify-content: center;
     height: 300px;
     flex-wrap: wrap;
+    background-color: #170A23;
 }
 
 .section--4 .CTA .content {
@@ -803,6 +805,7 @@ section {
     justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
+    padding-top: 2%;
 }
 
 .section--4 .map .content {
@@ -814,23 +817,23 @@ section {
 }
 
 .section--4 .point--1 {
-    margin: -56vw 0 0 24vw;
+    margin: -50vw 0 0 20vw;
 }
 
 .section--4 .point--2 {
-    margin: -30vw 0 0 57vw;
+    margin: -30vw 0 0 45vw;
 }
 
 .section--4 .point--3 {
-    margin: -18vw 0 0 28vw;
+    margin: -20vw 0 0 25vw;
 }
 
 .section--4 .point--4 {
-    margin: 20vw 0 vw 32vw;
+    margin: 40vw 0vw 25vw 25vw;
 }
 
 .section--4 .point--5 {
-    margin: 46vw 0 0 5vw;
+    margin: 35vw 0 0vw 10vw;
 }
 
 .section--5 {

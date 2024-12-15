@@ -656,7 +656,7 @@ section {
 
 .section--3 article {
     width: 470px;
-    height: 515px;
+    height: 460px;
     color: #F1F1F1;
     padding: 40px;
     border-radius: 30px;
@@ -675,21 +675,25 @@ section {
 }
 
 .section--3 img.qr {
-    width: 286px;
+    width: 70%;
     margin: 8px 0 -120px -95px;
 }
 
 .section--3 img.http {
-    width: 100%;
-    margin: 0;
+    width: 120%;
+    float: right;
+    right: -80px;
+    position: relative;
 }
 
 .section--3 button.qr {
-    margin: 0 0 0 40%;
+    margin: 45% 0 0 0;
+    float: right;
 }
 
 .section--3 button.http {
-    margin: -2px 0 0 0;
+    margin-top: -30px;
+    float: right;
 }
 
 .section--3 button {

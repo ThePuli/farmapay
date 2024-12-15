@@ -124,7 +124,7 @@
                     <div class="input">
                         <label for="">Monto de tu venta</label>
                         <div class="subtitle">(ingresá el dinero total de tu venta)</div>
-                        <input type="number" class="amount">
+                        <input type="number" class="amount" value="1.500">
                     </div>
                     <div class="select">
                         <label for="">Medio de cobro</label>
@@ -152,12 +152,12 @@
                             <div>
                                 <div class="text">Comisión:</div>
                                 <div class="flex-row">
-                                    <div class="subtitle"><s class="color--disabled">(1,8% + IVA)</s></div>
+                                    <!-- <div class="subtitle"><s class="color--disabled">(1,8% + IVA)</s></div> -->
                                     <div class="subtitle subtitle2">(1,8% + IVA)</div>
                                 </div>
                             </div>
                             <div class="flex-row">
-                                <div class="amount"><s class="color--disabled">- ($90,00)</s></div>
+                                <!-- <div class="amount"><s class="color--disabled">- ($90,00)</s></div> -->
                                 <div class="amount amount2">- ($90,00)</div>
                             </div>
                         </div>
@@ -174,7 +174,6 @@
                         </div>
                     </div>
                     <div class="notes">*Estos valores no contemplan IVA ni otros impuestos que pudieran aplicar.</div>
-                    <div class="notes">*El monto de la comisión bonificado aplica a nuevos clientes por el plazo de 12 meses.</div>
                 </div>
             </div>
     </section>
@@ -192,14 +191,14 @@
                     <li>Acepta tarjetas con chip, banda magnética y contactless</li>
                 </ul>
                 <img class="qr" src="assets/qr.gif" alt="qr" srcset="">
-                <button class="qr"><a href="https://www.farmapay.com.ar/precios.html">Conocer más <i>></i></a></button>
+                <button class="qr"><a target="_blank" href="https://farmapay-n395.vercel.app/precios.html">Conocer más <i>></i></a></button>
             </article>
             <article class="der">
                 <div class="title">Link de pago</div>
                 <p>Cobrá a distancia, en menos de un minuto y de forma segura a través de Whatsapp, email y canales digitales.
                 </p>
                 <img class="http" src="assets/http.gif" alt="message http ..." srcset="">
-                <button class="http"><a href="https://www.farmapay.com.ar/precios.html">Conocer más <i>></i></a></button>
+                <button class="http"><a target="_blank" href="https://farmapay-n395.vercel.app/precios.html">Conocer más <i>></i></a></button>
             </article>
         </div>
     </section>
@@ -289,7 +288,7 @@
 
             const tasasComision = {
                 tdd: { comision: 0.008, tiempo: "24hs", label: "0,8% + IVA" }, // Tarjeta de débito
-                tdc: { comision: 0.018, tiempo: "48hs", label: "1,8% + IVA" }, // Tarjeta de crédito
+                tdc: { comision: 0.018, tiempo: "8 días", label: "1,8% + IVA" }, // Tarjeta de crédito
                 qr: { comision: 0.008, tiempo: "12hs", label: "0,8% + IVA" }   // QR
             };
 

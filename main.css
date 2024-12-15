@@ -103,6 +103,7 @@ header ul li a{
     border: none;
     color: white;
     margin: 0 10px;
+    font-size: 16px;
 }
 .button--primary{
     background-color: #F1F1F1 !important;

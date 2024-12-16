@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +8,23 @@
     <link rel="shortcut icon" href="assets/logo-icon.svg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/dhm2akc.css">
     <link rel="stylesheet" href="main.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
+
 <body>
     <header>
         <main>
-            <div class="logo desktop"><a href="/"><img src="assets/logo-white.png" alt="logo farmapay"></a></div>
-            <div class="logo mobile"><a href="/"><img src="assets/logo-icon.svg" alt="logo farmapay"></a></div>
-            <ul class="menu">
+            <div class="logo desktop animate__animated animate__fadeIn animate__delay-0.5s"><a href="/"><img
+                        src="assets/logo-white.png" alt="logo farmapay"></a></div>
+            <div class="logo mobile animate__animated animate__fadeIn animate__delay-0.5s"><a href="/"><img
+                        src="assets/logo-icon.svg" alt="logo farmapay"></a></div>
+            <ul class="menu animate__animated animate__fadeIn animate__delay-0.5s">
                 <li><a href="">Descubre farmapay</a>
                     <ul class="submenu">
                         <li><a href="#funcionalidades">Funcionalidades</a></li>
@@ -30,158 +36,173 @@
                 <li><a href="">Ayuda</a>
                     <ul class="submenu">
                         <li><a href="faq.html">Preguntas frecuentes</a></li>
-                        <li><a href="https://odoo.farmapay.com.ar/helpdesk/farmapay-portal-200">Atención al cliente</a></li>
+                        <li><a href="https://odoo.farmapay.com.ar/helpdesk/farmapay-portal-200">Atención al cliente</a>
+                        </li>
                     </ul>
                 </li>
             </ul>
         </main>
-        <div class="buttons">
-            <button class="button--secondary"><a target="_blank" href="https://crearcuenta.farmapay.com.ar/">Crear cuenta</a></button>
-            <button class="button--primary"><a target="_blank" href="https://comercios.farmapay.com.ar/login">Ingresá</a></button>
+        <div class="buttons animate__animated animate__fadeIn animate__delay-0.5s">
+            <button class="button--secondary"><a target="_blank" href="https://crearcuenta.farmapay.com.ar/">Crear
+                    cuenta</a></button>
+            <button class="button--primary"><a target="_blank"
+                    href="https://comercios.farmapay.com.ar/login">Ingresá</a></button>
         </div>
     </header>
     <section class="hero">
-        <div class="hero-title"><div class="title--primary">Somos </br> la <b class="color--secondary">solución</br> de cobros</b></div><div class="title--secondary">exclusiva para </br> <b class="color--secondary">farmacias</b></div></div>
+        <div class="hero-title animate__animated animate__fadeIn animate__delay-0.5s">
+            <div class="title--primary">Somos </br> la <b class="color--secondary">solución</br> de cobros</b></div>
+            <div class="title--secondary">exclusiva para </br> <b class="color--secondary">farmacias</b></div>
+        </div>
         <div class="canvas">
             <!-- <div class="pos">
                 <img src="assets/POS.svg" alt="" srcset="">
             </div> -->
             <div class="dolar">
-                <img id="dolar" src="assets/amount.png" alt="" srcset="">
+                <img class="animate__animated animate__fadeInDown animate__delay-slow" id="dolar" src="assets/amount.png" alt="" srcset="">
             </div>
 
-            <div class="graphic-1"><img id="grafico-barras" src="assets/grafico-de-barras.gif" alt="gráfico de barras" srcset=""></div>
-            <div class="graphic-2"><img id="grafico-lineas" src="assets/grafico-de-linea.gif" alt="gráfico de líneas" srcset=""></div>
+            <div class="graphic-1 animate__animated animate__fadeInRight animate__delay-slow"><img id="grafico-barras" src="assets/grafico-de-barras.gif" alt="gráfico de barras"
+                    srcset=""></div>
+            <div class="graphic-2"><img id="grafico-lineas" src="assets/grafico-de-linea.gif" alt="gráfico de líneas"
+                    srcset=""></div>
             <a class="button--CTA" target="_blank" href="https://crearcuenta.farmapay.com.ar/">Crear cuenta <i>></i></a>
         </div>
     </section>
-    <section class="section--1" id="funcionalidades">
+    <section class="section--1 animate__animated animate__fadeIn animate__delay-0.5s" id="funcionalidades"><br>
         <h1 class="color--primary">Cobrá, invertí y gestioná</h1>
         <h3>el dinero de tu farmacia</h3>
         <div class="items">
-            <article class="item item--1"><div class="text">Inversión del dinero
-                con mayor rentabilidad
-                y más ganancias.</div>
+            <article class="item item--1">
+                <div class="text">Inversión del dinero
+                    con mayor rentabilidad
+                    y más ganancias.</div>
                 <img id="grafico-card" src="assets/grafico-card.gif" alt="" srcset="">
             </article>
-            <article class="item item--2"><div class="text">Cobros con todos
-                los medios de pago
-                y mejores plazos
-                de acreditación.</div>
+            <article class="item item--2">
+                <div class="text">Cobros con todos
+                    los medios de pago
+                    y mejores plazos
+                    de acreditación.</div>
                 <div class="pos">
                     <img id="estructura-pos" src="assets/POS.svg" alt="" srcset="">
                     <img id="interior-pos" src="assets/Interior-POS.gif" alt="" srcset="">
                 </div>
             </article>
-            <article class="item item--3"><div class="text">Gestión de todos
-                los movimientos
-                desde tu cuenta
-                <b>farmapay</b>.</div>
+            <article class="item item--3">
+                <div class="text">Gestión de todos
+                    los movimientos
+                    desde tu cuenta
+                    <b>farmapay</b>.
+                </div>
                 <img id="grafico-notebook" src="assets/grafico-notebook.gif" alt="" srcset="">
             </article>
         </div>
     </section>
-    <section class="section--2">
+    <section class="section--2 animate__animated animate__fadeIn animate__delay-0.5s">
         <h2>Descubrí los beneficios de tener <b class="highlight color--primary">farmapay</b></h2>
         <div class="articles">
-        <article class="article--1">
-            <img src="assets/01.png" alt="" srcset=""> 
-            <div>
-                <h4>Visibilidad
-                    y transparencia</h4>
-                <p>Sabés exactamente cuándo se acredita el dinero de tus ventas.</p>
-            </div>
-        </article>
-        <article class="article--2">
-            <img src="assets/02.png" alt="" srcset=""> 
-            <div>
-                <h4>Simplicidad
-                    y gestión</h4>
-                <p>Ahorrá tiempo con conciliaciones
-                    automáticas y descargá reportes
-                    mensuales o diarios para controlar
-                    tus movimientos.</p>
-            </div>
-        </article>
-        <article class="article--3">
-            <img src="assets/03.png" alt="" srcset=""> 
-            <div>
-                <h4>Rentabilidad
-                    y ganancias</h4>
-                <p>Podés invertir el saldo de tu cuenta
-                    y generar rendimientos diarios
-                    y así, tu dinero rinde más.</p>
-            </div>
-        </article>
-    </div>
+            <article class="article--1">
+                <img class="animate__animated animate__fadeInLeft animate__delay-0.5s" src="assets/01.png" alt=""
+                    srcset="">
+                <div class="animate__animated animate__fadeInRight animate__delay-0.5s">
+                    <h4>Visibilidad
+                        y transparencia</h4>
+                    <p>Sabés exactamente cuándo se acredita el dinero de tus ventas.</p>
+                </div>
+            </article>
+            <article class="article--2">
+                <img class="animate__animated animate__fadeInLeft animate__delay-0.5s" src="assets/02.png" alt=""
+                    srcset="">
+                <div class="animate__animated animate__fadeInRight animate__delay-0.5s">
+                    <h4>Simplicidad
+                        y gestión</h4>
+                    <p>Ahorrá tiempo con conciliaciones
+                        automáticas y descargá reportes
+                        mensuales o diarios para controlar
+                        tus movimientos.</p>
+                </div>
+            </article>
+            <article class="article--3">
+                <img class="animate__animated animate__fadeInLeft animate__delay-0.5s" src="assets/03.png" alt=""
+                    srcset="">
+                <div class="animate__animated animate__fadeInRight animate__delay-0.5s">
+                    <h4>Rentabilidad
+                        y ganancias</h4>
+                    <p>Podés invertir el saldo de tu cuenta
+                        y generar rendimientos diarios
+                        y así, tu dinero rinde más.</p>
+                </div>
+            </article>
+        </div>
     </section>
-    <section class="simulador" id="simulador">
+    <section class="simulador animate__animated animate__fadeIn animate__delay-0.5s" id="simulador"><br>
         <h2>Simulá una venta</h2>
         <h4 class="subtitle">Te mostraremos el plazo de acreditación y el monto
             que recibirás, sin sorpresas ni cargos ocultos.</h4>
-            <div class="simular">
-                <div class="simulador--izq">
-                    <div class="input">
-                        <label for="">Monto de tu venta</label>
-                        <div class="subtitle">(ingresá el dinero total de tu venta)</div>
-                        <input type="number" class="amount" value="1.500">
-                    </div>
-                    <div class="select">
-                        <label for="">Medio de cobro</label>
-                        <div class="subtitle">(Seleccioná el medio cobro correspondiente)</div>
-                        <div class="custom-select">   
+        <div class="simular">
+            <div class="simulador--izq animate__animated animate__fadeInLeft animate__delay-0.6s">
+                <div class="input">
+                    <label for="">Monto de tu venta</label>
+                    <div class="subtitle">(ingresá el dinero total de tu venta)</div>
+                    <input type="number" class="amount" value="1.500">
+                </div>
+                <div class="select">
+                    <label for="">Medio de cobro</label>
+                    <div class="subtitle">(Seleccioná el medio cobro correspondiente)</div>
+                    <div class="custom-select">
                         <select>
                             <option value="tdd">Tarjeta de débito</option>
                             <option value="tdc">Tarjeta de crédito</option>
                             <option value="qr">QR</option>
                         </select>
-                        </div>
                     </div>
-                </div>
-                <div class="simulador--der">
-                    <div>
-                        <div class="title">Monto a acreditar:</div>
-                        <div class="subtitle">(El dinero que recibirás por tu venta)</div>
-                    </div>
-                <div class="result">
-                        <div class="line total">
-                            <div class="text">Total cobrado </div>
-                            <div class="amount">$5.000</div>
-                        </div>
-                        <div class="line comission">
-                            <div>
-                                <div class="text">Comisión:</div>
-                                <div class="flex-row">
-                                    <!-- <div class="subtitle"><s class="color--disabled">(1,8% + IVA)</s></div> -->
-                                    <div class="subtitle subtitle2">(1,8% + IVA)</div>
-                                </div>
-                            </div>
-                            <div class="flex-row">
-                                <!-- <div class="amount"><s class="color--disabled">- ($90,00)</s></div> -->
-                                <div class="amount amount2">- ($90,00)</div>
-                            </div>
-                        </div>
-                        <div class="line total-send">
-                            <div class="text">Total a recibir: </div>
-                            <div class="amount">$14.500</div>
-                        </div>
-                        <div class="line time">
-                            <div>
-                                <div class="text">Tiempo de acreditación:</div>
-                                <div class="subtitle">(en días hábiles)</div>
-                            </div>
-                            <div class="amount">24hs</div>    
-                        </div>
-                    </div>
-                    <div class="notes">*Estos valores no contemplan IVA ni otros impuestos que pudieran aplicar.</div>
                 </div>
             </div>
+            <div class="simulador--der animate__animated animate__fadeInRight animate__delay-0.6s">
+                <div>
+                    <div class="title">Monto a acreditar:</div>
+                    <div class="subtitle">(El dinero que recibirás por tu venta)</div>
+                </div>
+                <div class="result">
+                    <div class="line total">
+                        <div class="text">Total cobrado </div>
+                        <div class="amount">$5.000</div>
+                    </div>
+                    <div class="line comission">
+                        <div>
+                            <div class="text">Comisión:</div>
+                            <div class="flex-row">
+                                <!-- <div class="subtitle"><s class="color--disabled">(1,8% + IVA)</s></div> -->
+                                <div class="subtitle subtitle2">(1,8% + IVA)</div>
+                            </div>
+                        </div>
+                        <div class="flex-row">
+                            <!-- <div class="amount"><s class="color--disabled">- ($90,00)</s></div> -->
+                            <div class="amount amount2">- ($90,00)</div>
+                        </div>
+                    </div>
+                    <div class="line total-send">
+                        <div class="text">Total a recibir: </div>
+                        <div class="amount">$14.500</div>
+                    </div>
+                    <div class="line time">
+                        <div>
+                            <div class="text">Tiempo de acreditación:</div>
+                            <div class="subtitle">(en días hábiles)</div>
+                        </div>
+                        <div class="amount">24hs</div>
+                    </div>
+                </div>
+                <div class="notes">*Estos valores no contemplan IVA ni otros impuestos que pudieran aplicar.</div>
+            </div>
+        </div>
     </section>
-    <section class="section--3" id="medios">
+    <section class="section--3 animate__animated animate__fadeIn animate__delay-0.5s" id="medios"><br>
         <h2>Comenzá a cobrar con <b class="highlight color--primary"> farmapay </b></h2>
         <h4>Ofrecemos múltiples opciones de cobro para que sea fácil y rápido.</h4>
         <div class="articles">
-            <article class="izq">
+            <article class="izq animate__animated animate__fadeInLeft animate__delay-0.5s">
                 <div class="title">Smart POS farmapay</div>
                 <p>Cobrá con tarjetas de crédito, débito o QR.</p>
                 <br>
@@ -191,27 +212,32 @@
                     <li>Acepta tarjetas con chip, banda magnética y contactless</li>
                 </ul>
                 <img class="qr" src="assets/qr.gif" alt="qr" srcset="">
-                <button class="qr"><a target="_blank" href="https://farmapay-n395.vercel.app/precios.html">Conocer más <i>></i></a></button>
+                <button class="qr"><a target="_blank" href="https://farmapay-n395.vercel.app/precios.html">Conocer más
+                        <i>></i></a></button>
             </article>
-            <article class="der">
+            <article class="der animate__animated animate__fadeInRight animate__delay-0.5s">
                 <div class="title">Link de pago</div>
-                <p>Cobrá a distancia, en menos de un minuto y de forma segura a través de Whatsapp, email y canales digitales.
+                <p>Cobrá a distancia, en menos de un minuto y de forma segura a través de Whatsapp, email y canales
+                    digitales.
                 </p>
                 <img class="http" src="assets/http.gif" alt="message http ..." srcset="">
-                <button class="http"><a target="_blank" href="https://farmapay-n395.vercel.app/precios.html">Conocer más <i>></i></a></button>
+                <button class="http"><a target="_blank" href="https://farmapay-n395.vercel.app/precios.html">Conocer más
+                        <i>></i></a></button>
             </article>
         </div>
     </section>
-    <section class="section--4">
+    <section class="section--4 animate__animated animate__fadeIn animate__delay-0.5s">
         <div class="CTA">
             <div class="content">
-                <h2>Sumá <b class="highlight">famapay</b> a tu farmacia y recibí tu POS <b class="highlight color--secondary">100% bonificado</b></h2>
+                <h2>Sumá <b class="highlight">famapay</b> a tu farmacia y recibí tu POS <b
+                        class="highlight color--secondary">100% bonificado</b></h2>
                 <p>Sin costo de mantenimiento ni apertura.</p>
             </div>
-            <button class="button--CTA"><a target="_blank" href="https://crearcuenta.farmapay.com.ar/">Crear cuenta </a> <i>></i></button>
+            <button class="button--CTA"><a target="_blank" href="https://crearcuenta.farmapay.com.ar/">Crear cuenta </a>
+                <i>></i></button>
         </div>
         <div class="map">
-            <div class="content">
+            <div class="content animate__animated animate__fadeInLeft animate__delay-0.5s">
                 <h2>Llegamos a
                     tu farmacia,
                     donde sea
@@ -219,29 +245,37 @@
                 <p><b class="color--secondary">farmapay</b> está presente
                     en todo el país.</p>
             </div>
-            <div class="illustration"><img id="map" src="assets/map.svg" alt="" srcset=""></div>
-            <div class="point point--1"><img src="assets/logo-icon.svg" alt="" srcset=""></div>
-            <div class="point point--2"><img src="assets/logo-icon.svg" alt="" srcset=""></div>
-            <div class="point point--3"><img src="assets/logo-icon.svg" alt="" srcset=""></div>
-            <div class="point point--4"><img src="assets/logo-icon.svg" alt="" srcset=""></div>
-            <div class="point point--5"><img src="assets/logo-icon.svg" alt="" srcset=""></div>
+            <div class="illustration animate__animated animate__fadeIn animate__delay-0.5s"><img id="map"
+                    src="assets/map.svg" alt="" srcset=""></div>
+            <div class="point point--1 animate__animated animate__fadeInRight animate__delay-0.6s"><img
+                    src="assets/logo-icon.svg" alt="" srcset=""></div>
+            <div class="point point--2 animate__animated animate__fadeInRight animate__delay-0.6s"><img
+                    src="assets/logo-icon.svg" alt="" srcset=""></div>
+            <div class="point point--3 animate__animated animate__fadeInRight animate__delay-0.6s"><img
+                    src="assets/logo-icon.svg" alt="" srcset=""></div>
+            <div class="point point--4 animate__animated animate__fadeInRight animate__delay-0.6s"><img
+                    src="assets/logo-icon.svg" alt="" srcset=""></div>
+            <div class="point point--5 animate__animated animate__fadeInRight animate__delay-0.6s"><img
+                    src="assets/logo-icon.svg" alt="" srcset=""></div>
         </div>
     </section>
-    <section class="section--5" id="crear-cuenta">
+    <section class="section--5 animate__animated animate__fadeIn animate__delay-0.5s" id="crear-cuenta">
         <h2>Somos la <b class=" highlight color--primary">plataforma financiera</b> del ecosistema farmacéutico</h2>
-        <button class="button--CTA"><a target="_blank" href="https://crearcuenta.farmapay.com.ar/">Crear cuenta </a> <i>></i></button>
+        <button class="button--CTA"><a target="_blank" href="https://crearcuenta.farmapay.com.ar/">Crear cuenta </a>
+            <i>></i></button>
     </section>
     <footer>
-        <div class="izq">
+        <div class="izq animate__animated animate__fadeInLeft animate__delay-0.5s">
             <img src="assets/logo.png" alt="" srcset="">
             <div class="rrss">
                 <a href="https://www.linkedin.com/company/farmapay/"><img src="assets/in.svg" alt="" srcset=""></a>
                 <a href="https://www.instagram.com/farmapay.ar/"><img src="assets/ig.svg" alt="" srcset=""></a>
                 <a href="https://www.youtube.com/@Farmapay"><img src="assets/yt.svg" alt="" srcset=""></a>
-                <a href="https://www.facebook.com/profile.php?id=61563813801653"><img src="assets/fb.svg" alt="" srcset=""></a>
+                <a href="https://www.facebook.com/profile.php?id=61563813801653"><img src="assets/fb.svg" alt=""
+                        srcset=""></a>
             </div>
         </div>
-        <div class="der">
+        <div class="der animate__animated animate__fadeInRight animate__delay-0.5s">
             <div class="title">Legales</div>
             <ul>
                 <li><a href="contratos.html">Contratos de adhesión - Ley N° 24.240 <br>de Defensa del Consumido</a></li>
@@ -251,24 +285,42 @@
                 <li><a href="https://odoo.farmapay.com.ar/helpdesk/farmapay-portal-200">Libro de quejas online</a></li>
             </ul>
         </div>
-        <div class="der">
+        <div class="der animate__animated animate__fadeInRight animate__delay-0.5s">
             <div class="title">Contacto</div>
             <ul>
                 <li><a href="faq.html">Contacto y preguntas frecuentes</a></li>
-                <li><a href="https://odoo.farmapay.com.ar/helpdesk/farmapay-portal-200">Botón de arrepentimiento</a></li>
+                <li><a href="https://odoo.farmapay.com.ar/helpdesk/farmapay-portal-200">Botón de arrepentimiento</a>
+                </li>
             </ul>
         </div>
-        <div class="bottom">
-            <p class="texto">Soluciones de Pago S.A. ofrece servicios de pago (bajo el código de proveedor número 34519), y no se encuentra autorizada a operar como entidad financiera por el Banco Central de la República Argentina. Los fondos acreditados en las Cuentas de Pago no constituyen depósitos en una entidad financiera, ni cuentan con ninguna de las garantías que tales depósitos puedan gozar de acuerdo con la legislación y reglamentación aplicables en materia de depósitos en entidades financieras.
+        <div class="bottom animate__animated animate__fadeIn animate__delay-0.5s">
+            <p class="texto">Soluciones de Pago S.A. ofrece servicios de pago (bajo el código de proveedor número
+                34519), y no se encuentra autorizada a operar como entidad financiera por el Banco Central de la
+                República Argentina. Los fondos acreditados en las Cuentas de Pago no constituyen depósitos en una
+                entidad financiera, ni cuentan con ninguna de las garantías que tales depósitos puedan gozar de acuerdo
+                con la legislación y reglamentación aplicables en materia de depósitos en entidades financieras.
             </p>
         </div>
 
-        <div class="bottom">
+        <div class="bottom animate__animated animate__fadeIn animate__delay-0.5s">
             <img src="assets/image1.webp" alt="" srcset="">
-            <a href="https://www.bcra.gob.ar/BCRAyVos/Usuarios_Financieros.asp" ><img src="assets/image2.webp" alt="" width="280" srcset=""></a>
+            <a href="https://www.bcra.gob.ar/BCRAyVos/Usuarios_Financieros.asp"><img src="assets/image2.webp" alt=""
+                    width="280" srcset=""></a>
         </div>
     </footer>
     <script>
+        const animateList = [].slice.call(document.querySelectorAll('.__animate__animated'))
+        animateList.map(function (animateEl) {
+            new Waypoint({
+                element: animateEl,
+                offset: 'bottom-in-view',
+                handler: function (direction) {
+                    //https://stackoverflow.com/a/56914528/3929620
+                    animateEl.className = animateEl.className.replace(/__animate__/g, 'animate__')
+                    this.destroy()
+                },
+            })
+        })
         const animation = lottie.loadAnimation({
             container: document.getElementById('lottie-animation'), // Contenedor
             renderer: 'svg', // Renderizado en SVG (también puedes usar canvas o html)
@@ -323,4 +375,5 @@
 
     </script>
 </body>
+
 </html>

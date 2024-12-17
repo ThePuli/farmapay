@@ -225,6 +225,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 8%;
 }
 
 .title--primary,
@@ -243,7 +244,7 @@ section {
 
 .title--secondary {
     color: #F1F1F1;
-    padding-top: 150px;
+    padding-top: 12%;
 }
 
 .title--secondary,
@@ -298,23 +299,35 @@ section {
 
 .canvas .button--CTA {
     margin: 0px 0vw 0px 0vw;
+    margin-left: 35%;
+    margin-top: -7%;
 }
 
 #grafico-barras {
     width: 22vw;
+    position: absolute;
+    top: -390px;
+    left: -300px;
 }
 
 #grafico-lineas {
     width: 22vw;
+    position: absolute;
+    top: -125px;
 }
 
 #dolar {
     width: 8vw;
+    grid-auto-flow: column;
+    position: absolute;
+    display: flex;
+    top: -420px;
+    left: -130px;
 }
 
 .pos {
     position: absolute;
-    top: 148px;
+    top: 255px;
 }
 
 #grafico-card {

@@ -231,7 +231,7 @@ section {
 .title--primary,
 .title--primary b {
     text-align: right;
-    font-size: 3vw;
+    font-size: 2.5vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -250,7 +250,7 @@ section {
 .title--secondary,
 .title--secondary b {
     text-align: left;
-    font-size: 3vw;
+    font-size: 2.5vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -437,7 +437,7 @@ section {
 .section--2 article h4 {
     color: #0E3CA5;
     font-family: "urbane-rounded";
-    font-size: 32px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -446,7 +446,7 @@ section {
 .section--2 article p {
     color: #170A23;
     font-family: "urbane-rounded";
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;

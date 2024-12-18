@@ -306,14 +306,15 @@ section {
 #grafico-barras {
     width: 22vw;
     position: absolute;
-    top: -390px;
-    left: -300px;
+    top: -29vw;
+    left: -23vw;
 }
 
 #grafico-lineas {
     width: 22vw;
     position: absolute;
-    top: -125px;
+    top: -10vw;
+    left: -4vw;
 }
 
 #dolar {
@@ -321,13 +322,14 @@ section {
     grid-auto-flow: column;
     position: absolute;
     display: flex;
-    top: -420px;
-    left: -130px;
+    top: -30vw;
+    left: -13vw;
 }
 
 .pos {
     position: absolute;
-    top: 255px;
+    right: 47vw;
+    top: 15vw;
 }
 
 #grafico-card {

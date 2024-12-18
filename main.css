@@ -650,12 +650,13 @@ section {
 
 .total-send .text {
     color: #F1F1F1;
+    font-size: 20px;
 }
 
 .total-send .amount {
     color: #F1F1F1;
     font-family: "urbane-rounded";
-    font-size: 20px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;

@@ -152,7 +152,7 @@
                 <div class="input">
                     <label for="">Monto de tu venta</label>
                     <div class="subtitle">(ingresá el dinero total de tu venta)</div>
-                    <input type="number" class="amount" value="1.500">
+                    <input type="number" class="amount" value="1500">
                 </div>
                 <div class="select">
                     <label for="">Medio de cobro</label>
@@ -174,24 +174,24 @@
                 <div class="result">
                     <div class="line total">
                         <div class="text">Total cobrado </div>
-                        <div class="amount">$5.000</div>
+                        <div class="amount">$1.500</div>
                     </div>
                     <div class="line comission">
                         <div>
                             <div class="text">Comisión:</div>
                             <div class="flex-row">
                                 <!-- <div class="subtitle"><s class="color--disabled">(1,8% + IVA)</s></div> -->
-                                <div class="subtitle subtitle2">(1,8% + IVA)</div>
+                                <div class="subtitle subtitle2">(1,6% + IVA)</div>
                             </div>
                         </div>
                         <div class="flex-row">
                             <!-- <div class="amount"><s class="color--disabled">- ($90,00)</s></div> -->
-                            <div class="amount amount2">- ($90,00)</div>
+                            <div class="amount amount2">- ($24,00)</div>
                         </div>
                     </div>
                     <div class="line total-send">
                         <div class="text">Total a recibir: </div>
-                        <div class="amount">$14.500</div>
+                        <div class="amount">$1.476</div>
                     </div>
                     <div class="line time">
                         <div>
@@ -347,8 +347,8 @@
             const subtitleComision = document.querySelector(".result .comission .subtitle2");
 
             const tasasComision = {
-                tdd: { comision: 0.008, tiempo: "24hs", label: "0,8% + IVA" }, // Tarjeta de débito
-                tdc: { comision: 0.018, tiempo: "8 días", label: "1,8% + IVA" }, // Tarjeta de crédito
+                tdd: { comision: 0.016, tiempo: "24hs", label: "1,6% + IVA" }, // Tarjeta de débito
+                tdc: { comision: 0.027, tiempo: "8 días", label: "2,7% + IVA" }, // Tarjeta de crédito
                 qr: { comision: 0.008, tiempo: "12hs", label: "0,8% + IVA" }   // QR
             };
 

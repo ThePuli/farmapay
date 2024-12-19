@@ -1133,7 +1133,7 @@ section.wrapper div.wrapper {
 }
 
 .faq .accordion {
-    max-width: 600px;
+    width: 100%;
     margin: auto;
     overflow: hidden;
 }
@@ -1176,7 +1176,7 @@ section.wrapper div.wrapper {
 
 /* Cuando el radio button está seleccionado, muestra el contenido */
 .faq input[type="radio"]:checked+.accordion-header+.accordion-content {
-    max-height: 100px;
+    max-height: 100%;
     /* Ajusta según el contenido */
     padding: 15px;
 }

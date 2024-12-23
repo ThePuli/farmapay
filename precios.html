@@ -10,47 +10,56 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/dhm2akc.css">
     <link rel="stylesheet" href="main.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body class="precios">
     <header>
         <main>
-            <div class="logo desktop"><a href="/"><img src="assets/logo-white.png" alt="logo farmapay"></a></div>
-            <div class="logo mobile"><a href="/"><img src="assets/logo-icon.svg" alt="logo farmapay"></a></div>
-            <ul class="menu">
+            <div class="logo desktop" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine"><a href="/"><img
+                        src="assets/logo-white.png" alt="logo farmapay"></a></div>
+            <div class="logo mobile" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine"><a href="/"><img
+                        src="assets/logo-icon.svg" alt="logo farmapay"></a></div>
+            <ul class="menu" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">
                 <li><a href="">Descubre farmapay</a>
                     <ul class="submenu">
-                        <li><a href="/#funcionalidades">Funcionalidades</a></li>
-                        <li><a href="/#medios">Medios de cobro y comisiones</a></li>
-                        <li><a href="/#simulador">Simulación de venta</a></li>
-                        <li><a href="/#crear-cuenta">Crear cuenta</a></li>
+                        <li><a href="#funcionalidades">Funcionalidades</a></li>
+                        <li><a href="#medios">Medios de cobro y comisiones</a></li>
+                        <li><a href="#simulador">Simulación de venta</a></li>
+                        <li><a target="_blank" href="https://crearcuenta.farmapay.com.ar/">Crear cuenta</a></li>
                     </ul>
                 </li>
                 <li><a href="">Ayuda</a>
                     <ul class="submenu">
                         <li><a href="faq.html">Preguntas frecuentes</a></li>
-                        <li><a href="https://odoo.farmapay.com.ar/helpdesk/farmapay-portal-200">Atención al cliente</a></li>
+                        <li><a href="https://odoo.farmapay.com.ar/helpdesk/farmapay-portal-200">Atención al cliente</a>
+                        </li>
                     </ul>
                 </li>
             </ul>
         </main>
-        <div class="buttons">
-            <button class="button--secondary"><a href="https://comercios.farmapay.com.ar/">Crear cuenta</a></button>
-            <button class="button--primary"><a href="https://comercios.farmapay.com.ar/login">Ingresá</a></button>
+        <div class="buttons" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">
+            <button class="button--secondary"><a target="_blank" href="https://crearcuenta.farmapay.com.ar/">Crear
+                    cuenta</a></button>
+            <button class="button--primary"><a target="_blank"
+                    href="https://comercios.farmapay.com.ar/login">Ingresá</a></button>
         </div>
     </header>
     <section class="cabecera wrapper">
-        <div class="wrapper">
-            <h2>Te ofrecemos una solución completa para
+        <div class="wrapper" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">
+            <h3>Te ofrecemos una solución completa para
                 que <b>cobres tus ventas de manera sencilla</b>,
-                sin costos de apertura ni mantenimiento.</h2>
-
+                sin costos de apertura ni mantenimiento.</h3>
+                <br>
             <h3>Con <b>farmapay </b> pagás únicamente una comisión por cada venta realizada.</h3>
         </div>
     </section>
     <section class="wrapper">
-        <div class="wrapper">
-            <h2>Aceptá pagos con <br>
-                tarjetas de <b class="color--primary">débito</b> y <b class="color--primary">crédito</b></h2>
+        <div class="wrapper" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">
+            <br><br>
+            <h3><b>Aceptá pagos con <br>
+                tarjetas de <b class="color--primary">débito</b> y <b class="color--primary">crédito</b></b></h3>
             <div class="logos">
                 <img src="assets/visa.webp" alt="visa" srcset="">
                 <img src="assets/mastercard.svg" alt="mastercard" srcset="">
@@ -58,10 +67,11 @@
         </div>
     </section>     
     <section class="cuerpo wrapper">
-        <div class="wrapper">
-            <h2 class="color--primary">Precios</h2>
-            <h3>El costo de comisión y el tiempo de acreditación<br>
-                varía según el medio de pago.</h3>
+        <div class="wrapper" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">
+            <br><br>
+            <h3 class="color--primary"><b>Precios</b></h3>
+            <h4>El costo de comisión y el tiempo de acreditación<br>
+                varía según el medio de pago.</h4>
                 <table>
                     <tr>
                         <th>Medio de pago</th>
@@ -82,25 +92,33 @@
                         <td>2,7% + IVA</td>
                         <td>8 días hábiles</td>
                     </tr>
+                    <tr></tr>
+                        <td>
+                            QR (dinero en cuenta)
+                        </td>
+                        <td>0,8% + IVA</td>
+                        <td>1 2hs hábiles</td>
+                    </tr>
 
                 </table>
-                <h2><b>¿Querés saber más?</b><br>
-                    <a href="/#simulador"><b class="color--primary">Simulá una venta</b> </a>y descubrí<br>
-                    en segundos cuántos recibirás.</h2>
+                <h3><b>¿Querés saber más?</b><br></h3>
+                <h4><a href="/#simulador"><b class="color--primary">Simulá una venta</b> </a>y descubrí 
+                    en segundos cuántos recibirás.</h4>
         </div>
     </section>
     </section>
     <footer>
-        <div class="izq">
+        <div class="izq" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-sine">
             <img src="assets/logo.png" alt="" srcset="">
             <div class="rrss">
                 <a href="https://www.linkedin.com/company/farmapay/"><img src="assets/in.svg" alt="" srcset=""></a>
                 <a href="https://www.instagram.com/farmapay.ar/"><img src="assets/ig.svg" alt="" srcset=""></a>
                 <a href="https://www.youtube.com/@Farmapay"><img src="assets/yt.svg" alt="" srcset=""></a>
-                <a href="https://www.facebook.com/profile.php?id=61563813801653"><img src="assets/fb.svg" alt="" srcset=""></a>
+                <a href="https://www.facebook.com/profile.php?id=61563813801653"><img src="assets/fb.svg" alt=""
+                        srcset=""></a>
             </div>
         </div>
-        <div class="der">
+        <div class="der" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine">
             <div class="title">Legales</div>
             <ul>
                 <li><a href="contratos.html">Contratos de adhesión - Ley N° 24.240 <br>de Defensa del Consumido</a></li>
@@ -110,21 +128,31 @@
                 <li><a href="https://odoo.farmapay.com.ar/helpdesk/farmapay-portal-200">Libro de quejas online</a></li>
             </ul>
         </div>
-        <div class="der">
+        <div class="der" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine">
             <div class="title">Contacto</div>
             <ul>
                 <li><a href="faq.html">Contacto y preguntas frecuentes</a></li>
-                <li><a href="https://odoo.farmapay.com.ar/helpdesk/farmapay-portal-200">Botón de arrepentimiento</a></li>
+                <li><a href="https://odoo.farmapay.com.ar/helpdesk/farmapay-portal-200">Botón de arrepentimiento</a>
+                </li>
             </ul>
         </div>
-        <div class="bottom">
-            <p class="texto">Soluciones de Pago S.A. ofrece servicios de pago (bajo el código de proveedor número 34519), y no se encuentra autorizada a operar como entidad financiera por el Banco Central de la República Argentina. Los fondos acreditados en las Cuentas de Pago no constituyen depósitos en una entidad financiera, ni cuentan con ninguna de las garantías que tales depósitos puedan gozar de acuerdo con la legislación y reglamentación aplicables en materia de depósitos en entidades financieras.
+        <div class="bottom" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">
+            <p class="texto">Soluciones de Pago S.A. ofrece servicios de pago (bajo el código de proveedor número
+                34519), y no se encuentra autorizada a operar como entidad financiera por el Banco Central de la
+                República Argentina. Los fondos acreditados en las Cuentas de Pago no constituyen depósitos en una
+                entidad financiera, ni cuentan con ninguna de las garantías que tales depósitos puedan gozar de acuerdo
+                con la legislación y reglamentación aplicables en materia de depósitos en entidades financieras.
             </p>
         </div>
-        <div class="bottom">
+
+        <div class="bottom" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">
             <img src="assets/image1.webp" alt="" srcset="">
-            <a href="https://www.bcra.gob.ar/BCRAyVos/Usuarios_Financieros.asp" ><img src="assets/image2.webp" alt="" width="330" srcset=""></a>
+            <a href="https://www.bcra.gob.ar/BCRAyVos/Usuarios_Financieros.asp"><img src="assets/image2.webp" alt=""
+                    width="280" srcset=""></a>
         </div>
     </footer>
 </body>
 </html>
+<script>
+    AOS.init();
+</script>

@@ -1142,20 +1142,16 @@ section.wrapper div.wrapper {
     margin: auto;
     overflow: hidden;
 }
-
 .faq .accordion-item {
     padding-bottom: 20px;
 }
-
 .faq .accordion-item:last-child {
     border-bottom: none;
 }
-
 /* Esconde los radio buttons */
 .faq input[type="radio"] {
     display: none;
 }
-
 .faq .accordion-header {
     display: block;
     padding: 15px;
@@ -1169,21 +1165,9 @@ section.wrapper div.wrapper {
     place-content: space-between;
     align-items: center;
 }
-
 .faq .accordion-header:hover {
     background: #eaeaea;
 }
-
-.faq .button--accordion--open {
-    display: inline;
-    vertical-align: middle;
-}
-
-.faq .button--accordion--open {
-    display: none;
-    vertical-align: middle;
-}
-
 .faq .accordion-content {
     max-height: 0;
     overflow: hidden;
@@ -1191,7 +1175,6 @@ section.wrapper div.wrapper {
     background: #fff;
     transition: max-height 0.3s ease, padding 0.3s ease;
 }
-
 /* Cuando el radio button está seleccionado, muestra el contenido */
 .faq input[type="radio"]:checked+.accordion-header+.accordion-content {
     max-height: 100%;
@@ -1203,7 +1186,6 @@ section.wrapper div.wrapper {
         vertical-align: middle;
     }
 }
-
 .faq .preguntas {
     max-width: 960px;
     display: flex;
@@ -1211,6 +1193,50 @@ section.wrapper div.wrapper {
     align-items: center;
     margin: auto;
 }
+
+.accordion {
+    background-color: #f7f7f7;
+    color: #0E3CA4;
+    cursor: pointer;
+    padding: 12px 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: 0.4s;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  
+  .accordion:hover {
+    background-color: #eee;
+  }
+  
+  .accordion:after {
+    content: "⌃";
+    color: #0E3CA4;
+    font-weight: bold;
+    float: right;
+    font-size: 20px;
+    border-radius: 100%;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "⌃";
+    rotate: 180deg;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {

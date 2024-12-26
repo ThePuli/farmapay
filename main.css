@@ -1231,6 +1231,7 @@ section.wrapper div.wrapper {
   .panel {
     padding: 0 18px;
     margin-top: 6px;
+    margin-right: auto;
     margin-bottom: 10px;
     background-color: white;
     max-height: 0;

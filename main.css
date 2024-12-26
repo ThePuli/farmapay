@@ -335,6 +335,19 @@ section {
     top: 15vw;
 }
 
+.pos-2 {
+    position: absolute;
+    right: 5vw;
+    top: 10vw;
+}
+
+#interior-pos {
+    position: absolute;
+    right: 1.8vw;
+    top: 7.7vw;
+    width: 8.4vw;
+}
+
 #grafico-card {
     width: 260px;
     position: absolute;

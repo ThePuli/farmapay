@@ -337,8 +337,8 @@ section {
 
 .pos-2 {
     position: absolute;
-    right: 5vw;
-    top: 10vw;
+    top: 14vw;
+    position-area: center;
 }
 
 #interior-pos {
@@ -399,6 +399,7 @@ section {
 .item .text {
     color: #F1F1F1;
     font-size: 18px;
+    width: 260px;
 }
 
 .item--1 {
@@ -1251,6 +1252,65 @@ section.wrapper div.wrapper {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
   }
+
+/* animacion POS */
+.containner {
+    position: relative;
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+.left,
+.right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0; /* Comienza con ancho 0 */
+    height: 360px;
+    opacity: 0; /* Comienza oculto */
+    transition: all 0.5s ease-in-out; /* Animación suave */
+    align-items: center;
+    border-radius: 30px;
+    padding: 30px;
+    color: #F1F1F1;
+    font-size: 18px;
+}
+.left {
+    left: -200px; /* Comienza fuera de la pantalla por la izquierda */
+    transition: all 1s ease-in-out; /* Transición suave */
+}
+.right {
+    right: -200px; /* Comienza fuera de la pantalla por la derecha */
+    transition: all 1s ease-in-out; /* Transición suave */
+}
+.doc {
+    width: 800px; /* Tamaño inicial */
+    height: 360px; /* Altura inicial */
+    background-color: #170A23;
+    transition: all 0.8s ease-in-out; /* Transición suave */
+    align-items: center;
+    border-radius: 30px;
+    padding: 30px;
+    color: #F1F1F1;
+    font-size: 18px;
+}
+.doc.shrink {
+    width: 250px; /* Tamaño reducido */
+    height: 360px;
+    background-color: #170A23;
+}
+.left.visible {
+    left: 175px; /* Aparece con un movimiento hacia adentro */
+    width: 250px; /* Ancho máximo al final */
+    opacity: 1; /* Se hace visible */
+}
+.right.visible {
+    right: 175px; /* Aparece con un movimiento hacia adentro */
+    width: 250px; /* Ancho máximo al final */
+    opacity: 1; /* Se hace visible */
+}
 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {

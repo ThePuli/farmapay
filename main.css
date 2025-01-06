@@ -337,7 +337,8 @@ section {
 
 .pos-2 {
     position: absolute;
-    top: 15vw;
+    top: -40vw;
+    left: 107vw;
     position-area: center;
 }
 
@@ -1302,12 +1303,12 @@ section.wrapper div.wrapper {
     background-color: #170A23;
 }
 .left.visible {
-    left: 175px; /* Aparece con un movimiento hacia adentro */
+    left: 8vw; /* Aparece con un movimiento hacia adentro */
     width: 250px; /* Ancho máximo al final */
     opacity: 1; /* Se hace visible */
 }
 .right.visible {
-    right: 175px; /* Aparece con un movimiento hacia adentro */
+    right: 8vw; /* Aparece con un movimiento hacia adentro */
     width: 250px; /* Ancho máximo al final */
     opacity: 1; /* Se hace visible */
 }

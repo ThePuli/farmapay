@@ -1,415 +1,1332 @@
-<!DOCTYPE html>
-<html lang="es">
+html {
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farmapay</title>
-    <link rel="shortcut icon" href="assets/logo-icon.svg" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://use.typekit.net/dhm2akc.css">
-    <link rel="stylesheet" href="main.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+* {
+    font-family: "urbane-rounded", sans-serif;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+}
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-</head>
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
-<body>
-    <header>
-        <main>
-            <div class="logo desktop" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine"><a
-                    href="/"><img src="assets/logo-white.png" alt="logo farmapay"></a></div>
-            <div class="logo mobile" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine"><a
-                    href="/"><img src="assets/logo-icon.svg" alt="logo farmapay"></a></div>
-            <ul class="menu" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">
-                <li><a href="">Descubre farmapay</a>
-                    <ul class="submenu">
-                        <li><a href="#funcionalidades">Funcionalidades</a></li>
-                        <li><a href="#medios">Medios de cobro y comisiones</a></li>
-                        <li><a href="#simulador">Simulación de venta</a></li>
-                        <li><a target="_blank" href="https://crearcuenta.farmapay.com.ar/">Crear cuenta</a></li>
-                    </ul>
-                </li>
-                <li><a href="">Ayuda</a>
-                    <ul class="submenu">
-                        <li><a href="faq.html">Preguntas frecuentes</a></li>
-                        <li><a href="https://odoo.farmapay.com.ar/helpdesk/farmapay-portal-200">Atención al cliente</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </main>
-        <div class="buttons" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">
-            <button class="button--secondary"><a target="_blank" href="https://crearcuenta.farmapay.com.ar/">Crear
-                    cuenta</a></button>
-            <button class="button--primary"><a target="_blank"
-                    href="https://comercios.farmapay.com.ar/login">Ingresá</a></button>
-        </div>
-    </header>
-    <section class="hero">
-        <div class="hero-title" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">
-            <div class="title--primary">Somos </br> la <b class="color--secondary">solución</br> de cobros</b></div>
-            <div class="title--secondary">exclusiva para </br> <b class="color--secondary">farmacias</b></div>
-        </div>
-        <div class="canvas">
-            <div class="pos">
-                <img class="" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine"
-                    src="assets/POS.svg" alt="" srcset="">
-                <img data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine" id="interior-pos" src="assets/Interior-POS.gif" alt="" srcset="">
-            </div>
-            <div class="dolar">
-                <img class="" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine" id="dolar"
-                    src="assets/amount.png" alt="" srcset="">
-            </div>
+.color--primary {
+    color: #0E3CA5 !important;
+}
 
-            <div class="graphic-1">
-                <img class="" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine"
-                    id="grafico-barras" src="assets/grafico-de-barras.gif" alt="gráfico de barras" srcset="">
-            </div>
-            <div class="graphic-2">
-                <img class="" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-sine"
-                    id="grafico-lineas" src="assets/grafico-de-linea.gif" alt="gráfico de líneas" srcset="">
-            </div>
-            <a class="button--CTA" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine"
-                target="_blank" href="https://crearcuenta.farmapay.com.ar/">Crear cuenta <i>></i></a>
-        </div>
-    </section>
-    <section class="section--1" id="funcionalidades">
-        <br>
-        <h1 class="color--primary" data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in-sine">Cobrá, invertí y gestioná</h1>
-        <h3 data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in-sine">el dinero de tu farmacia</h3>
-        <div class="containner">
-            <div class="left item item--1">
-                <div class="text" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">Inversión del dinero
-                    con mayor rentabilidad
-                    y más ganancias.</div>
-                <img id="grafico-card" src="assets/grafico-card.gif" alt="" srcset="">
-            </div>
-            <div class="center doc item">
-                <div class="text" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">Cobros con todos
-                    los medios de pago
-                    y mejores plazos
-                    de acreditación.</div>
-                <div class="pos-2">
-                    <div class="pos">
-                        <img class="" src="assets/POS.svg" alt="" srcset="">
-                        <img id="interior-pos" src="assets/Interior-POS.gif" alt="" srcset="">
-                    </div>
-                </div>
-            </div>
-            <div class="right item item--3">
-                <div class="text" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">Gestión de todos
-                    los movimientos
-                    desde tu cuenta
-                    <b>farmapay</b>.
-                </div>
-                <img id="grafico-notebook" src="assets/grafico-notebook.gif" alt="" srcset="">
-            </div>
-        </div>
-    </section>
-    <section class="section--2">
-        <h2 data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">Descubrí los beneficios de tener
-            <b class="highlight color--primary">farmapay</b>
-        </h2>
-        <div class="articles">
-            <article class="article--1">
-                <img class="" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-sine" src="assets/01.png" alt="" srcset="">
-                <div class="" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine">
-                    <h4>Visibilidad
-                        y transparencia</h4>
-                    <p>Sabés exactamente cuándo se acredita el dinero de tus ventas.</p>
-                </div>
-            </article>
-            <article class="article--2">
-                <img class="" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-sine" src="assets/02.png" alt="" srcset="">
-                <div class="" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine">
-                    <h4>Simplicidad
-                        y gestión</h4>
-                    <p>Ahorrá tiempo con conciliaciones
-                        automáticas y descargá reportes
-                        mensuales o diarios para controlar
-                        tus movimientos.</p>
-                </div>
-            </article>
-            <article class="article--3">
-                <img class="" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-sine" src="assets/03.png" alt="" srcset="">
-                <div class="" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine">
-                    <h4>Rentabilidad
-                        y ganancias</h4>
-                    <p>Podés invertir el saldo de tu cuenta
-                        y generar rendimientos diarios
-                        y así, tu dinero rinde más.</p>
-                </div>
-            </article>
-        </div>
-    </section>
-    <section class="simulador" id="simulador"><br>
-        <h2 data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">Simulá una venta</h2>
-        <h4 data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine" class="subtitle">Te mostraremos el
-            plazo de acreditación y el monto
-            que recibirás, sin sorpresas ni cargos ocultos.</h4>
-        <div class="simular">
-            <div class="simulador--izq" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-sine">
-                <div class="input">
-                    <label for="">Monto de tu venta</label>
-                    <div class="subtitle" style="margin-bottom: 6px;">(ingresá el dinero total de tu venta)</div>
-                    <input type="number" class="amount" value="1500">
-                </div>
-                <br>
-                <div class="select">
-                    <label for="">Medio de cobro</label>
-                    <div class="subtitle" style="margin-bottom: 6px;">(Seleccioná el medio cobro correspondiente)</div>
-                    <div class="custom-select">
-                        <select>
-                            <option value="tdd">Tarjeta de débito</option>
-                            <option value="tdc">Tarjeta de crédito</option>
-                            <option value="qr">QR (dinero en cuenta)</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-            <div class="simulador--der" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine">
-                <div>
-                    <div class="title">Monto a acreditar:</div>
-                    <div class="subtitle">(El dinero que recibirás por tu venta)</div>
-                </div>
-                <div class="result">
-                    <div class="line total">
-                        <div class="text">Total cobrado </div>
-                        <div class="amount">$1.500</div>
-                    </div>
-                    <div class="line comission">
-                        <div>
-                            <div class="text">Comisión:</div>
-                            <div class="flex-row">
-                                <!-- <div class="subtitle"><s class="color--disabled">(1,8% + IVA)</s></div> -->
-                                <div class="subtitle subtitle2">(1,6% + IVA)</div>
-                            </div>
-                        </div>
-                        <div class="flex-row">
-                            <!-- <div class="amount"><s class="color--disabled">- ($90,00)</s></div> -->
-                            <div class="amount amount2">- ($24,00)</div>
-                        </div>
-                    </div>
-                    <div class="line total-send">
-                        <div class="text">Total a recibir: </div>
-                        <div class="amount">$1.476</div>
-                    </div>
-                    <div class="line time">
-                        <div>
-                            <div class="text">Tiempo de acreditación:</div>
-                            <div class="subtitle">(en días hábiles)</div>
-                        </div>
-                        <div class="amount">24hs</div>
-                    </div>
-                </div>
-                <div class="notes">*Estos valores no contemplan IVA ni otros impuestos que pudieran aplicar.</div>
-            </div>
-        </div>
-    </section>
-    <section class="section--3" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine" id="medios">
-        <br>
-        <h2>Comenzá a cobrar con <b class="highlight color--primary"> farmapay </b></h2>
-        <h4>Ofrecemos múltiples opciones de cobro para que sea fácil y rápido.</h4>
-        <div class="articles">
-            <article class="izq" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-sine">
-                <div class="title">Smart POS farmapay</div>
-                <p>Cobrá con tarjetas de crédito, débito o QR.</p>
-                <br>
-                <ul>
-                    <li>Tecnología 4G y wifi</li>
-                    <li>Impresión de comprobantes</li>
-                    <li>Acepta tarjetas con chip, banda magnética y contactless</li>
-                </ul>
-                <img class="qr" src="assets/qr.gif" alt="qr" srcset="">
-                <button class="qr"><a target="_blank" href="precios.html">Conocer más
-                        <i>></i></a></button>
-            </article>
-            <article class="der" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine">
-                <div class="title">Link de pago</div>
-                <p>Cobrá a distancia, en menos de un minuto y de forma segura a través de Whatsapp, email y canales
-                    digitales.
-                </p>
-                <img class="http" src="assets/http.gif" alt="message http ..." srcset="">
-                <button class="http"><a target="_blank" href="precios.html">Conocer más
-                        <i>></i></a></button>
-            </article>
-        </div>
-    </section>
-    <section class="section--4" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">
-        <div class="CTA">
-            <div class="content">
-                <h2>Sumá <b class="highlight">famapay</b> a tu farmacia y recibí tu POS <b
-                        class="highlight color--secondary">100% bonificado</b></h2>
-                <p>Sin costo de mantenimiento ni apertura.</p>
-            </div>
-            <button class="button--CTA"><a target="_blank" href="https://crearcuenta.farmapay.com.ar/">Crear cuenta </a>
-                <i>></i></button>
-        </div>
-        <div class="map">
-            <div class="content" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">
-                <h2>Llegamos a
-                    tu farmacia,
-                    donde sea
-                    que esté</h2>
-                <p style="font-size: 18px;"><b class="color--secondary">farmapay</b> está presente
-                    en todo el país.</p>
-            </div>
-            <div class="illustration" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine"><img
-                    id="map" src="assets/map.svg" alt="" srcset=""></div>
-            <div class="point point--1"><img src="assets/logo-icon.svg" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine" alt="" srcset=""></div>
-            <div class="point point--2"><img src="assets/logo-icon.svg" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine" alt="" srcset=""></div>
-            <div class="point point--3"><img src="assets/logo-icon.svg" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine" alt="" srcset=""></div>
-            <div class="point point--4"><img src="assets/logo-icon.svg" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine" alt="" srcset=""></div>
-            <div class="point point--5"><img src="assets/logo-icon.svg" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine" alt="" srcset=""></div>
-        </div>
-    </section>
-    <section class="section--5" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine"
-        id="crear-cuenta">
-        <h2 data-aos="fade-down" data-aos-duration="800" data-aos-easing="ease-in-sine">Somos la <b class=" highlight color--primary">plataforma financiera</b> del ecosistema farmacéutico</h2>
-        <button class="button--CTA" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
-            <a target="_blank" href="https://crearcuenta.farmapay.com.ar/">Crear cuenta </a>
-            <i>></i>
-        </button>
-    </section>
-    <footer>
-        <div class="izq" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-sine">
-            <img src="assets/logo.png" alt="" srcset="">
-            <div class="rrss">
-                <a href="https://www.linkedin.com/company/farmapay/"><img src="assets/in.svg" alt="" srcset=""></a>
-                <a href="https://www.instagram.com/farmapay.ar/"><img src="assets/ig.svg" alt="" srcset=""></a>
-                <a href="https://www.youtube.com/@Farmapay"><img src="assets/yt.svg" alt="" srcset=""></a>
-                <a href="https://www.facebook.com/profile.php?id=61563813801653"><img src="assets/fb.svg" alt=""
-                        srcset=""></a>
-            </div>
-        </div>
-        <div class="der" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine">
-            <div class="title">Legales</div>
-            <ul>
-                <li><a href="contratos.html">Contratos de adhesión - Ley N° 24.240 <br>de Defensa del Consumido</a></li>
-                <li><a href="precios.html">Comisiones y cargos</a></li>
-                <li><a href="https://odoo.farmapay.com.ar/helpdesk/farmapay-portal-200">Botón de baja</a></li>
-                <li><a href="defensa.html">Defensa de los consumidores</a></li>
-                <li><a href="https://odoo.farmapay.com.ar/helpdesk/farmapay-portal-200">Libro de quejas online</a></li>
-            </ul>
-        </div>
-        <div class="der" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine">
-            <div class="title">Contacto</div>
-            <ul>
-                <li><a href="faq.html">Contacto y preguntas frecuentes</a></li>
-                <li><a href="https://odoo.farmapay.com.ar/helpdesk/farmapay-portal-200">Botón de arrepentimiento</a>
-                </li>
-            </ul>
-        </div>
-        <div class="bottom" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">
-            <p class="texto">Soluciones de Pago S.A. ofrece servicios de pago (bajo el código de proveedor número
-                34519), y no se encuentra autorizada a operar como entidad financiera por el Banco Central de la
-                República Argentina. Los fondos acreditados en las Cuentas de Pago no constituyen depósitos en una
-                entidad financiera, ni cuentan con ninguna de las garantías que tales depósitos puedan gozar de acuerdo
-                con la legislación y reglamentación aplicables en materia de depósitos en entidades financieras.
-            </p>
-        </div>
+.color--secondary {
+    color: #5586F1 !important;
+}
 
-        <div class="bottom" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">
-            <img src="assets/image1.webp" alt="" srcset="">
-            <a href="https://www.bcra.gob.ar/BCRAyVos/Usuarios_Financieros.asp"><img src="assets/image2.webp" alt=""
-                    width="280" srcset=""></a>
-        </div>
-    </footer>
-    <script>
-        AOS.init();
-        const animateList = [].slice.call(document.querySelectorAll('.__animate__animated'))
+.color--disabled {
+    color: #ccc !important;
+}
 
-        animateList.map(function (animateEl) {
-            new Waypoint({
-                element: animateEl,
-                offset: 'bottom-in-view',
-                handler: function (direction) {
-                    //https://stackoverflow.com/a/56914528/3929620
-                    animateEl.className = animateEl.className.replace(/__animate__/g, 'animate__')
-                    this.destroy()
-                },
-            })
-        })
+.color--white {
+    color: #fff !important;
+}
 
-        const animation = lottie.loadAnimation({
-            container: document.getElementById('lottie-animation'), // Contenedor
-            renderer: 'svg', // Renderizado en SVG (también puedes usar canvas o html)
-            loop: true, // Si la animación debe repetirse
-            autoplay: true, // Si debe iniciarse automáticamente
-            path: 'assets/qr.json' // Ruta al archivo JSON
-        });
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
 
-        document.addEventListener("DOMContentLoaded", function () {
-            const inputMonto = document.querySelector(".input input");
-            const selectMedioCobro = document.querySelector(".select select");
-            const amountCobrado = document.querySelector(".result .total .amount");
-            const amountComision = document.querySelector(".result .comission .amount2");
-            const amountRecibir = document.querySelector(".result .total-send .amount");
-            const tiempoAcreditacion = document.querySelector(".result .time .amount");
-            const subtitleComision = document.querySelector(".result .comission .subtitle2");
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
 
-            const tasasComision = {
-                tdd: { comision: 0.016, tiempo: "24hs", label: "1,6% + IVA" }, // Tarjeta de débito
-                tdc: { comision: 0.027, tiempo: "8 días", label: "2,7% + IVA" }, // Tarjeta de crédito
-                qr: { comision: 0.008, tiempo: "12hs", label: "0,8% + IVA" }   // QR
-            };
+h1 {
+    color: #0E3CA5;
+    text-align: center;
+    font-family: "urbane-rounded";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
 
-            const calcular = () => {
-                const montoVenta = parseFloat(inputMonto.value) || 0;
-                const medioCobro = selectMedioCobro.value;
+h2,
+h2 .highlight {
+    font-family: "urbane-rounded";
+    font-size: 36px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
 
-                if (!tasasComision[medioCobro]) {
-                    return;
-                }
+h3 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+}
 
-                const { comision, tiempo, label } = tasasComision[medioCobro];
+h4 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+}
 
-                // Calcular comisiones
-                const montoComision = montoVenta * comision;
-                const iva = montoComision * 0.21; // 21% de IVA sobre la comisión
-                const totalDescuento = montoComision + iva;
-                const totalRecibir = montoVenta - totalDescuento;
+header {
+    display: flex;
+    flex-direction: row;
+    padding: 24px;
+    justify-content: space-between;
+    gap: 24px;
+    background: #170A23;
+    color: white;
+    align-items: center;
 
-                // Actualizar valores en el DOM
-                amountCobrado.textContent = `$${montoVenta.toFixed(2)}`;
-                amountComision.textContent = `- ($${totalDescuento.toFixed(2)})`;
-                amountRecibir.textContent = `$${totalRecibir.toFixed(2)}`;
-                tiempoAcreditacion.textContent = tiempo;
-                subtitleComision.textContent = `(${label})`;
-            };
+}
 
-            // Eventos
-            inputMonto.addEventListener("input", calcular);
-            selectMedioCobro.addEventListener("change", calcular);
-        });
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
 
-        // Animacion POS
-        const doc = document.querySelector('.doc');
-        const left = document.querySelector('.left');
-        const right = document.querySelector('.right');
+header ul li {
+    list-style: none;
+    display: inline;
+    padding: 0 10px;
+}
 
-        window.addEventListener('scroll', () => {
-            const scrollPosition = window.scrollY;
+header ul li a {
+    color: white;
+}
 
-            // Cambia el tamaño del div central
-            if (scrollPosition > 800) {
-                doc.classList.add('shrink'); // Achica el div central
-                left.classList.add('visible'); // Muestra el div izquierdo
-                right.classList.add('visible'); // Muestra el div derecho
-            } else {
-                doc.classList.remove('shrink'); // Restaura el tamaño del div central
-                left.classList.remove('visible'); // Oculta el div izquierdo
-                right.classList.remove('visible'); // Oculta el div derecho
-            }
-        });
-    </script>
-</body>
+.logo.desktop {
+    display: none;
+}
 
-</html>
+.logo.mobile {
+    display: block;
+}
+
+.logo.mobile img {
+    display: block;
+    width: 60px;
+}
+
+@media only screen and (min-width: 1111px) {
+    .logo.desktop {
+        display: block;
+    }
+
+    .logo.mobile {
+        display: none;
+    }
+}
+
+.buttons button {
+    background: none;
+    border: none;
+    color: white;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.button--primary {
+    background-color: #F1F1F1 !important;
+    color: #170A23 !important;
+    border-radius: 20px;
+    padding: 5px 18px;
+}
+
+@media only screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+}
+
+.menu li:hover ul {
+    opacity: 2;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li ul {
+    /* display: none; */
+    display: flex;
+    opacity: 0;
+    background-color: #FFF;
+    border-radius: 20px;
+    position: absolute;
+    margin-top: 10px;
+    flex-direction: column;
+    padding: 30px 20px;
+    left: 0;
+    min-width: 280px;
+    flex-wrap: nowrap;
+    gap: 10px;
+    z-index: 1;
+    transition: all 0.3s;
+}
+
+.menu li ul li {
+    padding: 4px 8px;
+}
+
+.menu li ul li:hover {
+    transition: background-color 0.3s;
+    background-color: #5585F0;
+    border-radius: 10px;
+}
+
+.menu li ul li:hover a {
+    color: #F1F1F1;
+    transition: color 0.3s;
+}
+
+.submenu:after {
+    content: '';
+    background-image: url(./assets/arrow.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    padding: 0 130px 0 0;
+}
+
+.submenu a {
+    color: #1E1E1E;
+}
+
+
+section {
+    padding: 74px;
+}
+
+.hero {
+    background: #170A23;
+    color: white;
+    height: 600px;
+    padding: 200px 16px 0;
+}
+
+.hero-title {
+    display: flex;
+    justify-content: center;
+    gap: 25vw;
+    color: #F1F1F1;
+}
+
+.hero .canvas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+.title--primary,
+.title--primary b {
+    text-align: right;
+    font-size: 2.5vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    justify-content: center;
+}
+
+.title--primary {
+    color: #F1F1F1;
+}
+
+.title--secondary {
+    color: #F1F1F1;
+    padding-top: 12%;
+}
+
+.title--secondary,
+.title--secondary b {
+    text-align: left;
+    font-size: 2.5vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    justify-content: center;
+}
+
+.hero .button--CTA {
+    color: #F1F1F1;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background-color: #5586F1;
+    border: 0;
+    border-radius: 40px;
+    padding: 15px 15px 15px 30px;
+}
+
+.hero .button--CTA i {
+    color: #F1F1F1;
+    border: 2px solid;
+    padding: 2px 10px;
+    margin-left: 10px;
+    border-color: #F1F1F1;
+    border-radius: 100%;
+}
+
+.canvas div {
+    position: absolute;
+}
+
+/* .canvas .pos{
+    margin: -266px 68px 0px 0px;
+} */
+.canvas .dolar {
+    margin: -120px 0 0 22vw;
+}
+
+.canvas .graphic-1 {
+    margin: -100px 0 0 48vw;
+}
+
+.canvas .graphic-2 {
+    margin: 0 0 0 -40vw;
+}
+
+.canvas .button--CTA {
+    margin: 0px 0vw 0px 0vw;
+    margin-left: 35%;
+    margin-top: -7%;
+}
+
+#grafico-barras {
+    width: 22vw;
+    position: absolute;
+    top: -29vw;
+    left: -23vw;
+}
+
+#grafico-lineas {
+    width: 22vw;
+    position: absolute;
+    top: -10vw;
+    left: -4vw;
+}
+
+#dolar {
+    width: 8vw;
+    grid-auto-flow: column;
+    position: absolute;
+    display: flex;
+    top: -30vw;
+    left: -13vw;
+}
+
+.pos {
+    position: absolute;
+    right: 47vw;
+    top: 15vw;
+}
+
+.pos-2 {
+    position: absolute;
+    top: -40vw;
+    left: 107vw;
+    position-area: center;
+}
+
+#interior-pos {
+    position: absolute;
+    right: 1.8vw;
+    top: 7.7vw;
+    width: 8.4vw;
+}
+
+#grafico-card {
+    width: 260px;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+}
+
+#grafico-notebook {
+    width: 260px;
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+}
+
+.pos #estructura-pos {}
+
+.pos #interior-pos {
+    position: absolute;
+    width: 123px;
+    left: 20px;
+    top: 114px;
+}
+
+.items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px 0;
+}
+
+.item {
+    color: #F1F1F1;
+    display: flex;
+    width: 250px;
+    height: 360px;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.item .text {
+    color: #F1F1F1;
+    font-size: 18px;
+    width: 260px;
+}
+
+.item--1 {
+    background: #5586F1;
+}
+
+.item--2 {
+    background: #170A23;
+}
+
+.item--3 {
+    background: #0E3CA5;
+}
+
+.section--2 .articles {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.section--2 article h4 {
+    text-align: left;
+}
+
+.section--2 article {
+    display: flex;
+    flex-direction: row;
+    gap: 85px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.section--2 article img {
+    width: 500px;
+    height: 400.714px;
+    flex-shrink: 0;
+    border-radius: 27px;
+    background: lightgray 50% / cover no-repeat;
+}
+
+.section--2 article div {
+    display: flex;
+    width: 388px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.section--2 article h4 {
+    color: #0E3CA5;
+    font-family: "urbane-rounded";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.section--2 article p {
+    color: #170A23;
+    font-family: "urbane-rounded";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.simulador {
+    background: linear-gradient(296deg, #5585F0 8.21%, #0E3CA4 76.75%);
+    text-align: center;
+}
+
+.simulador * {
+    color: #F1F1F1;
+}
+
+.simulador .subtitle {
+    max-width: 675px;
+    margin: auto;
+}
+
+.simular {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.simulador--izq {
+    display: flex;
+    width: 581px;
+    height: 253px;
+    padding: 38px 62px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #5586F1;
+}
+
+.simulador--izq label {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.simulador--izq input,
+.simulador--izq select {
+    background-color: #0E3CA5;
+    border: 0;
+    border-radius: 20px;
+    padding: 8px 0;
+    padding-left: 30px;
+    width: calc(100% + 30px);
+}
+
+.simulador--izq .input {
+    display: inline-block;
+    position: relative;
+}
+
+.simulador--izq .input::before {
+    content: '$';
+    position: absolute;
+    bottom: 6px;
+    left: 1em;
+}
+
+.simulador--izq select {
+    width: calc(100% - 20px);
+}
+
+.custom-select {
+    position: relative;
+}
+
+.custom-select select {
+    appearance: none;
+}
+
+.custom-select::after {
+    --size: 0.3rem;
+    position: absolute;
+    content: "";
+    background-image: url(assets/arrow-down.svg);
+    right: 1.7rem;
+    top: 13%;
+    pointer-events: none;
+    padding: 12px;
+}
+
+.simulador--der {
+    color: #0E3CA5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 470px;
+    height: 343px;
+    padding: 38px 60px 38px 45px;
+    /* align-items: center; */
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #FFF;
+    margin-left: -250px;
+    text-align: left;
+}
+
+@media only screen and (max-width: 1111px) {
+    .simulador--izq {
+        width: auto;
+    }
+
+    .simulador--der {
+        margin-left: 0;
+        margin-top: -40px;
+    }
+
+    .simulador--izq,
+    .simulador--der {
+        max-width: 320px;
+    }
+}
+
+.simulador--der * {
+    color: #0E3CA5;
+}
+
+.simulador--der .title {
+    color: #0E3CA5;
+    font-family: "urbane-rounded";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.simulador--der .subtitle {
+    color: #0E3CA5;
+    font-family: "urbane-rounded";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.simulador--der .result {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.simulador--der .result .line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.simulador--der .text {
+    font-family: "urbane-rounded";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.simulador--der .subtitle {
+    font-family: "urbane-rounded";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.simulador--der .amount {
+    font-family: "urbane-rounded";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.simulador--der .notes {
+    color: #1E1E1E;
+    font-family: "urbane-rounded";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.total-send {
+    border-radius: 20px;
+    background: #5586F1;
+    padding: 8px 12px;
+    align-items: center;
+}
+
+.total-send .text {
+    color: #F1F1F1;
+    font-size: 20px;
+}
+
+.total-send .amount {
+    color: #F1F1F1;
+    font-family: "urbane-rounded";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.section--3 h2,
+.section--3 h4 {
+    text-align: center;
+}
+
+.section--3 .articles {
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+    padding: 50px 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.section--3 article {
+    width: 470px;
+    height: 400px;
+    color: #F1F1F1;
+    padding: 40px;
+    border-radius: 30px;
+}
+
+.section--3 article * {
+    color: #F1F1F1;
+}
+
+.section--3 article.izq {
+    background-color: #5586F1;
+}
+
+.section--3 article.der {
+    background-color: #0E3CA5;
+}
+
+.section--3 img.qr {
+    width: 70%;
+    margin: 8px 0 -120px -95px;
+}
+
+.section--3 img.http {
+    width: 100%;
+    float: right;
+    right: -80px;
+    position: relative;
+}
+
+.section--3 button.qr {
+    margin: 35% 0 0 0;
+    float: right;
+}
+
+.section--3 button.http {
+    margin-top: -5%;
+    float: right;
+}
+
+.section--3 button {
+    color: #F1F1F1;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background-color: #5586F1;
+    border: 0;
+    border-radius: 40px;
+    padding: 15px 15px 15px 30px;
+}
+
+.section--3 button i {
+    color: #F1F1F1;
+    border: 2px solid;
+    padding: 2px 10px;
+    margin-left: 10px;
+    border-color: #F1F1F1;
+    border-radius: 100%;
+}
+
+.section--3 .izq button {
+    background-color: #0E3CA5;
+}
+
+.section--3 .title {
+    font-family: "urbane-rounded";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 25px;
+
+}
+
+.section--3 p,
+.section--3 li {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.section--3 ul {
+    list-style-position: outside;
+    margin-left: 25px;
+}
+
+.section--4 {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-image: url(assets/Rectangle.png);
+}
+
+.section--4 .CTA {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    flex-wrap: wrap;
+    background-color: #010307;
+}
+
+.section--4 .CTA .content {
+    max-width: 540px;
+}
+
+.section--4 .content * {
+    text-align: left;
+    color: #F1F1F1;
+}
+
+.section--4 .button--CTA {
+    color: #F1F1F1;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background-color: #5586F1;
+    border: 0;
+    border-radius: 40px;
+    padding: 15px 15px 15px 30px;
+}
+
+.section--4 .button--CTA i {
+    color: #F1F1F1;
+    border: 2px solid;
+    padding: 2px 10px;
+    margin-left: 10px;
+    border-color: #F1F1F1;
+    border-radius: 100%;
+}
+
+#map {
+    width: 100%;
+}
+
+.section--4 .map {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-top: 2%;
+}
+
+.section--4 .map .content {
+    max-width: 420px;
+}
+
+.section--4 .point {
+    position: absolute;
+}
+
+.section--4 .point--1 {
+    margin: -50vw 0 0 20vw;
+}
+
+.section--4 .point--2 {
+    margin: -30vw 0 0 45vw;
+}
+
+.section--4 .point--3 {
+    margin: -20vw 0 0 25vw;
+}
+
+.section--4 .point--4 {
+    margin: 40vw 0vw 25vw 25vw;
+}
+
+.section--4 .point--5 {
+    margin: 35vw 0 0vw 10vw;
+}
+
+.section--5 {
+    background-color: #F1F1F1;
+    height: 506px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 27px
+}
+
+.section--5 h2 {
+    max-width: 626px;
+}
+
+.section--5 .button--CTA {
+    color: #F1F1F1;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background-color: #5586F1;
+    border: 0;
+    border-radius: 40px;
+    padding: 15px 15px 15px 30px;
+}
+
+.section--5 .button--CTA i {
+    color: #F1F1F1;
+    border: 2px solid;
+    padding: 2px 10px;
+    margin-left: 10px;
+    border-color: #F1F1F1;
+    border-radius: 100%;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 50px 40px 0;
+    flex-wrap: wrap;
+}
+
+footer li {
+    list-style: none;
+    padding: 6px 0;
+}
+
+footer li a {
+    text-decoration: none;
+}
+
+footer .rrss * {
+    color: #0E3CA5;
+}
+
+footer .der .title {
+    font-weight: 600;
+    padding-bottom: 14px;
+}
+
+footer .bottom .texto {
+    font-size: 12px;
+    font-style: italic;
+    margin: 30px auto;
+}
+
+/* CONTRATOS */
+
+.contratos.cabecera {
+    background-color: #170A23;
+    color: #F1F1F1;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    text-align-last: left;
+}
+
+.contratos .cabecera {
+    display: flex;
+    flex-direction: column;
+}
+
+.contratos h1,
+.contratos h3 {
+    color: #F1F1F1;
+    text-align: left;
+}
+
+.contratos.content {
+    background-color: #F1F1F1;
+    display: flex;
+    justify-content: center;
+}
+
+.contratos .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+}
+
+.contratos .content,
+.contratos .cabecera {
+    width: 960px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.contratos .button {
+    background-color: white;
+    border-radius: 20px;
+    padding: 50px;
+    width: 290px;
+    color: #0E3CA4;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.05);
+}
+
+.contratos .button h3 {
+    color: #0E3CA4;
+    font-size: 24px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* DEFENSA */
+section.cabecera {
+    background-color: #170A23;
+}
+
+section.cabecera h1,
+section.cabecera h2,
+section.cabecera h3 {
+    color: #FFF;
+    text-align: left;
+}
+
+section.cuerpo {
+    background-color: #F1F1F1;
+}
+
+section.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+section.wrapper div.wrapper {
+    max-width: 960px;
+}
+
+/* PRECIOS */
+
+.precios .logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px auto;
+    align-items: center;
+}
+
+.precios .logos img {
+    width: 100px;
+}
+
+.precios section.cabecera h2 {
+    font-weight: 500;
+    padding-bottom: 24px;
+}
+
+.precios section.cabecera h1,
+.precios section.cabecera h3 {
+    font-weight: normal;
+}
+
+.precios section h1,
+.precios section h3 {
+    font-weight: normal;
+}
+
+.precios table {
+    margin: 36px auto 72px;
+    background-color: #FFF;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.precios th,
+.precios td {
+    border: 1px solid black;
+    fill: black;
+    padding: 10px 14px;
+    width: 250px;
+}
+
+.precios th {
+    text-align: left;
+}
+
+/* FAQ */
+
+.faq .cabecera .wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 72px;
+}
+
+.faq .cabecera img {
+    width: 200px;
+}
+
+.faq section.cabecera h1,
+.faq section.cabecera h3 {
+    font-weight: normal;
+}
+
+.faq .contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 46px;
+}
+
+.faq .contacto h3 {
+    text-align: left;
+}
+
+.faq .contacto .izq,
+.faq .contacto .der {
+    border-radius: 20px;
+    padding: 20px 36px;
+    text-align: left;
+    min-width: 300px;
+}
+
+.faq .contacto .izq {
+    background-color: #5585F0;
+    color: #F1F1F1;
+}
+
+.faq .contacto .der {
+    background-color: #0E3CA4;
+    color: #F1F1F1;
+}
+
+.faq .button--CTA {
+    color: #F1F1F1;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background-color: #5586F1;
+    border: 0;
+    display: block;
+    text-align: right;
+    margin: 20px auto;
+    border-radius: 40px;
+    padding: 15px 15px 15px 30px;
+}
+
+.faq .button--CTA i {
+    color: #F1F1F1;
+    border: 2px solid;
+    padding: 2px 10px;
+    margin-left: 10px;
+    border-color: #F1F1F1;
+    border-radius: 100%;
+}
+
+.faq .accordion {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.faq .accordion-item {
+    padding-bottom: 20px;
+}
+.faq .accordion-item:last-child {
+    border-bottom: none;
+}
+/* Esconde los radio buttons */
+.faq input[type="radio"] {
+    display: none;
+}
+.faq .accordion-header {
+    display: block;
+    padding: 15px;
+    background: #f7f7f7;
+    color: #0E3CA4;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+    display: flex;
+    place-content: space-between;
+    align-items: center;
+}
+.faq .accordion-header:hover {
+    background: #eaeaea;
+}
+.faq .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px;
+    background: #fff;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+/* Cuando el radio button está seleccionado, muestra el contenido */
+.faq input[type="radio"]:checked+.accordion-header+.accordion-content {
+    max-height: 100%;
+    /* Ajusta según el contenido */
+    padding: 15px;
+
+    .button--accordion--open {
+        display: none;
+        vertical-align: middle;
+    }
+}
+.faq .preguntas {
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.accordion {
+    background-color: #f7f7f7;
+    color: #0E3CA4;
+    cursor: pointer;
+    padding: 12px 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: 0.4s;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  
+  .accordion:hover {
+    background-color: #eee;
+  }
+  
+  .accordion:after {
+    content: "⌃";
+    color: #0E3CA4;
+    font-weight: bold;
+    float: right;
+    font-size: 20px;
+    border-radius: 100%;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "⌃";
+    rotate: 180deg;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    margin-top: 6px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+/* animacion POS */
+.containner {
+    position: relative;
+    width: 100%;
+    z-index: -1;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+.left,
+.right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0; /* Comienza con ancho 0 */
+    height: 360px;
+    opacity: 0; /* Comienza oculto */
+    transition: all 0.5s ease-in-out; /* Animación suave */
+    align-items: center;
+    border-radius: 30px;
+    padding: 30px;
+    color: #F1F1F1;
+    font-size: 18px;
+}
+.left {
+    left: -200px; /* Comienza fuera de la pantalla por la izquierda */
+    transition: all 1s ease-in-out; /* Transición suave */
+}
+.right {
+    right: -200px; /* Comienza fuera de la pantalla por la derecha */
+    transition: all 1s ease-in-out; /* Transición suave */
+}
+.doc {
+    width: 800px; /* Tamaño inicial */
+    height: 360px; /* Altura inicial */
+    background-color: #170A23;
+    transition: all 0.8s ease-in-out; /* Transición suave */
+    align-items: center;
+    border-radius: 30px;
+    padding: 30px;
+    font-size: 18px;
+    top: -60vw;
+    color: #010307 !important;
+}
+.doc.shrink {
+    color: #F1F1F1 !important;
+    width: 250px; /* Tamaño reducido */
+    height: 360px;
+    top: 0vw;
+    background-color: #170A23;
+}
+.left.visible {
+    left: 8vw; /* Aparece con un movimiento hacia adentro */
+    width: 250px; /* Ancho máximo al final */
+    opacity: 1; /* Se hace visible */
+}
+.right.visible {
+    right: 8vw; /* Aparece con un movimiento hacia adentro */
+    width: 250px; /* Ancho máximo al final */
+    opacity: 1; /* Se hace visible */
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+[class*="__animate__"] {
+    opacity: 0;
+}

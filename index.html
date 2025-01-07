@@ -80,10 +80,10 @@
                 target="_blank" href="https://crearcuenta.farmapay.com.ar/">Crear cuenta <i>></i></a>
         </div>
     </section>
-    <section class="section--1" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine"
-        id="funcionalidades"><br>
-        <h1 class="color--primary">Cobrá, invertí y gestioná</h1>
-        <h3>el dinero de tu farmacia</h3>
+    <section class="section--1" id="funcionalidades">
+        <br>
+        <h1 class="color--primary" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">Cobrá, invertí y gestioná</h1>
+        <h3 data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">el dinero de tu farmacia</h3>
         <div class="containner">
             <div class="left item item--1">
                 <div class="text" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">Inversión del dinero
@@ -92,7 +92,7 @@
                 <img id="grafico-card" src="assets/grafico-card.gif" alt="" srcset="">
             </div>
             <div class="center doc item">
-                <div class="text">Cobros con todos
+                <div class="text"  data-aos="fade-in" data-aos-duration="2000" data-aos-easing="ease-in-sine">Cobros con todos
                     los medios de pago
                     y mejores plazos
                     de acreditación.</div>
@@ -325,6 +325,7 @@
     <script>
         AOS.init();
         const animateList = [].slice.call(document.querySelectorAll('.__animate__animated'))
+
         animateList.map(function (animateEl) {
             new Waypoint({
                 element: animateEl,
@@ -336,6 +337,7 @@
                 },
             })
         })
+
         const animation = lottie.loadAnimation({
             container: document.getElementById('lottie-animation'), // Contenedor
             renderer: 'svg', // Renderizado en SVG (también puedes usar canvas o html)

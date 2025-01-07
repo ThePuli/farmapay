@@ -1294,12 +1294,15 @@ section.wrapper div.wrapper {
     align-items: center;
     border-radius: 30px;
     padding: 30px;
-    color: #F1F1F1;
     font-size: 18px;
+    top: -30vw;
+    color: #010307 !important;
 }
 .doc.shrink {
+    color: #F1F1F1 !important;
     width: 250px; /* Tamaño reducido */
     height: 360px;
+    top: 0vw;
     background-color: #170A23;
 }
 .left.visible {

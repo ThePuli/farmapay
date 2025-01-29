@@ -473,7 +473,7 @@ section {
 }
 
 .simulador {
-    background: linear-gradient(296deg, #5585F0 8.21%, #0E3CA4 76.75%);
+    background:  #0E3CA4;
     text-align: center;
 }
 
@@ -520,6 +520,7 @@ section {
     text-align: left;
     gap: 10px;
     flex-shrink: 0;
+    z-index: 9;
     border-radius: 30px;
 }
 
@@ -579,8 +580,6 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 470px;
-    height: 343px;
     padding: 38px 60px 38px 45px;
     /* align-items: center; */
     gap: 10px;

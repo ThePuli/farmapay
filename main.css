@@ -805,20 +805,6 @@ section {
     background-image: url(assets/Rectangle.png);
 }
 
-.section--4 .CTA {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 300px;
-    flex-wrap: wrap;
-    background-color: #010307;
-}
-
-.section--4 .CTA .content {
-    max-width: 540px;
-}
-
 .section--4 .content * {
     text-align: left;
     color: #F1F1F1;
@@ -1074,8 +1060,9 @@ section.wrapper div.wrapper {
 }
 
 .precios table {
-    margin: 40px auto 20px;
-    background-color: #FFF;
+    width: -webkit-fill-available;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border: 1px solid black;
     border-collapse: collapse;
 }

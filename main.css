@@ -145,14 +145,8 @@ header ul li a {
     padding: 5px 18px;
 }
 
-@media only screen and (max-width: 768px) {
-    .menu {
-        display: none;
-    }
-}
-
 .menu li:hover ul {
-    opacity: 2;
+    opacity: 9;
 }
 
 .menu li {
@@ -160,7 +154,6 @@ header ul li a {
 }
 
 .menu li ul {
-    /* display: none; */
     display: flex;
     opacity: 0;
     background-color: #FFF;
@@ -194,7 +187,7 @@ header ul li a {
 }
 
 .submenu:after {
-    z-index: 999;
+    z-index: 999 !important;
     content: '';
     background-image: url(./assets/arrow.svg);
     background-position: left;
@@ -205,6 +198,7 @@ header ul li a {
     width: 20px;
     height: 20px;
     padding: 0 130px 0 0;
+    opacity: 2;
 }
 
 .submenu a {
@@ -1314,4 +1308,32 @@ input[type=number] {
 
 [class*="__animate__"] {
     opacity: 0;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 768px) {
+    .menu { display: none; }
+    section { padding: 50px !important; }
+    .section--4 .point--5 { margin: 150vw 60vw 0vw 0vw; }
+    .section--4 .point--4 { margin: 100vw 0vw 25vw 25vw; }
+    .section--4 .point--3 { margin: 20vw 0 0 -40vw; }
+    .section--4 .point--2 { margin: -0vw 0 0 45vw; }
+    .section--4 .point--1 { margin: -50vw 0 0 0vw; }
+    .section--3 article { height: auto; padding: 30px; }
+    .section--3 img.http { width: 100%; margin-bottom: 5%; margin-top: 0; right: -50px; }
+    .section--3 button { padding: 15px; }
+    .section--3 img.qr { margin: 0px 0px 0px 120px; }
+    .section--3 button.qr { margin: 0; }
+    .simular { overflow: visible; }
+    .new-phone { width: 250px; margin-bottom: 25%; }
+    .canvas .button--CTA { margin-top: 145%; margin-left: 0;}
+    .pos { top: 80vw; right: auto; }
+    #grafico-lineas { width: 40vw; position: absolute; top: 15vw; left: -25vw; }
+    #grafico-barras { width: 40vw; }
+    #dolar { width: 15vw; top: -30vw; left: 20vw; }
+    .title--primary, .title--primary b { font-size: 5vw !important; text-align: left; }
+    .title--secondary, .title--secondary b { font-size: 5vw !important; }
+    .hero-title { gap: 0vw; display: grid }
+    .title--secondary { padding-top: 0%; }
+    header { gap: 0; }
 }

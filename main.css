@@ -1233,6 +1233,7 @@ section.wrapper div.wrapper {
   }
 
 /* animacion POS */
+.containner-responsive { display: none; }
 .containner {
     position: relative;
     width: 100%;
@@ -1336,4 +1337,11 @@ input[type=number] {
     .hero-title { gap: 0vw; display: grid }
     .title--secondary { padding-top: 0%; }
     header { gap: 0; }
+
+    /* responsive POS */
+    .containner { display: none; }
+    .containner-responsive { display: contents; }
+    .item { margin-top: 2rem; margin-bottom: 2rem; }
+    .pos-2 { top: -200vw; left: -40vw; }
+    .section--1 { justify-items: center; }
 }

@@ -1468,3 +1468,23 @@ input[type=number] {
     .section--4 .point--2 { margin: -0vw 0px 26vw 36vw; }
     .pos-2 .pos { right: 1vw; }
 }
+
+@media only screen and (max-width: 390px) { 
+    #grafico-lineas { top: -77vw; }
+}
+
+@media only screen and (max-width: 375px) { 
+    .pos { top: 40vw; }
+    #grafico-lineas { top: -80vw; }
+    .pos-2 { left: 48vw; }
+    .section--4 .point--1 { margin: -42vw 0 0 -23vw; }
+}
+
+@media only screen and (max-width: 360px) { 
+    .canvas .graphic-2 { margin: 0 0 -47vw -32vw; }
+    #dolar { top: -45vw; }
+    .canvas .button--CTA { margin-top: 158vw; }
+    #grafico-lineas { top: -105vw; }
+    #grafico-barras { top: 47vw; left: -40vw; }
+    .section--3 article { width: 65vw; }
+}

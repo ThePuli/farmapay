@@ -1311,6 +1311,92 @@ input[type=number] {
 }
 
 /* RESPONSIVE */
+@media only screen and (max-width: 1300px) {
+    .left.visible { left: 6vw; }
+    .right.visible { right: 6vw; }
+}
+@media only screen and (max-width: 1226px) {
+    .left.visible { left: 4vw; }
+    .right.visible { right: 4vw; }
+}
+
+@media only screen and (max-width: 1173px) {
+    .left.visible { left: 2vw; }
+    .right.visible { right: 2vw; }
+    .section--3 article { width: 400px; }
+    .section--3 button.qr { margin: 0; }
+    .section--3 button.http { margin-top: 1vw; }
+}
+
+@media only screen and (max-width: 1125px) { 
+    .left.visible { left: 0vw; }
+    .right.visible { right: 0vw; }
+    .section--3 .articles { gap: 2vw; }
+    .section--3 article { width: 30vw; }
+    .section--3 img.qr { width: 65%; }
+    .section--3 img.http { width: 80%; }
+}
+
+@media only screen and (max-width: 1080px) { 
+    .left.visible { left: -2vw !important; }
+    .right.visible { right: -2vw !important; }
+}
+
+@media only screen and (max-width: 1036px) { 
+    .left.visible { left: -4vw !important; }
+    .right.visible { right: -4vw !important; }
+    .doc { top: -65vw; }
+}
+
+@media only screen and (max-width: 996px) { 
+    .left.visible { left: -5vw !important; }
+    .right.visible { right: -5vw !important; }
+    .doc { top: -70vw; }
+    .section--3 button.qr { margin-top: 4vw; }
+    .section--3 img.qr { width: 60%; }
+    .section--3 button.qr { margin-top: -1vw; }
+    .section--3 article { height: 33vw; }
+    .section--4 .point--1 { margin: -50vw 0 0 4vw; }
+    .section--4 .point--2 { margin: -30vw 0 0 -22vw; }
+    .section--4 .point--3 { margin: -10vw 0 0 6vw; }
+    .section--4 .point--4 { margin: 40vw 0vw 25vw -15vw; }
+    .section--4 .point--5 { margin: 55vw 0 0vw -30vw; }
+}
+
+@media only screen and (max-width: 938px) { 
+    .left.visible { left: -7vw !important; }
+    .right.visible { right: -7vw !important; }
+    .left, .right, .doc { padding: 20px; }
+    .new-phone { width: 20vw; }
+    .section--3 button.qr { margin-top: -3vw !important; }
+    .hero-title { gap: 32vw; }
+    .containner { display: none; }
+    .containner-responsive { display: flow; }
+    .item { margin-top: 2rem; margin-bottom: 2rem; width: 40vw; }
+    .pos-2 { top: -20vw; left: 40vw; }
+    .section--1 { justify-items: center; }
+    .pos { top: 30vw; right: 42vw; }
+    .pos-2 .pos { position: absolute; right: 11vw; top: 5vw; }
+    .canvas .button--CTA { margin-left: 50%; }
+    .canvas .graphic-2 { margin: 0 0 -30vw -40vw; }
+}
+
+@media only screen and (max-width: 874px) { 
+    .containner { display: none; }
+    .containner-responsive { display: flow; }
+    .item { margin-top: 2rem; margin-bottom: 2rem; width: 40vw; }
+    .pos-2 { top: -20vw; left: 40vw; }
+    .section--1 { justify-items: center; }
+    .pos { top: 30vw; right: 42vw; }
+    .pos-2 .pos { position: absolute; right: 11vw; top: 5vw; }
+    .canvas .button--CTA { margin-left: 50%; }
+    .canvas .graphic-2 { margin: 0 0 -30vw -40vw; }
+    .section--2 article { gap: 4vw; }
+    .section--3 img.qr, .section--3 img.http { display: none; }
+    .section--3 button.qr { margin-top: 1vw !important; }
+    .section--3 button.http { margin-top: 10vw !important; }
+}
+
 @media only screen and (max-width: 768px) {
     .menu { display: none; }
     section { padding: 50px !important; }
@@ -1324,17 +1410,17 @@ input[type=number] {
     .section--3 button { padding: 15px; }
     .section--3 img.qr { display: none; }
     .section--3 button.qr { margin-top: 10% !important; }
-    .section--3 button.http { margin-top: 40% !important; }
+    .section--3 button.http { margin-top: 21vw !important; }
     .section--2 article img { width: 250px; }
     .section--2 article div { width: 333px; }
     .simular { overflow: visible; flex-wrap: nowrap; }
     .simulador--der { padding: 3%; }
     .new-phone { width: 250px; margin-bottom: 25%; }
-    .canvas .button--CTA { margin-top: 145%; margin-left: 0;}
-    .pos { top: 80vw; align-self: anchor-center; right: 20%; }
-    #grafico-lineas { width: 40vw; position: absolute; top: 15vw; left: -25vw; }
-    #grafico-barras { width: 40vw; }
-    #dolar { width: 15vw; top: -30vw; left: 20vw; }
+    .canvas .button--CTA { margin-top: 100vw; margin-left: 0vw;}
+    .pos { top: 0vw; align-self: anchor-center; right: 10vw; }
+    #grafico-lineas { width: 40vw; position: absolute; top: -30vw; left: 10vw; }
+    #grafico-barras { width: 40vw; top: 30vw; }
+    #dolar { width: 15vw; top: -20vw; left: 20vw; }
     .title--primary, .title--primary b { font-size: 5vw !important; text-align: left; }
     .title--secondary, .title--secondary b { font-size: 5vw !important; }
     .hero-title { gap: 0vw; display: table-caption; }
@@ -1345,8 +1431,40 @@ input[type=number] {
     /* responsive POS */
     .containner { display: none; }
     .containner-responsive { display: flow; }
-    .item { margin-top: 2rem; margin-bottom: 2rem; width: auto; }
-    .pos-2 { top: -180vw; left: -23vw; }
+    .item { margin-top: 2rem; margin-bottom: 2rem;  width: 40vw; }
+    .pos-2 { top: -20vw; left: 40vw; }
     .section--1 { justify-items: center; }
-    .hero .canvas { margin-top: -25%; }
+    .hero .canvas { margin-top: -95%; }
+}
+
+@media only screen and (max-width: 642px) {
+    .section--2 article { gap: 5vw; }
+    .section--2 article div { width: 250px; }
+    .section--2 article p { font-size: 18px; }
+    .section--2 article h4 { font-size: 20px; }
+    .new-phone { width: 0vw; }
+    .section--3 .articles { display: grid; }
+    .section--3 button.http { margin-top: 5vw !important; }
+}
+
+@media only screen and (max-width: 549px) { 
+    #grafico-lineas { top: -44vw; }
+    .hero-title { margin-top: 12vw; }
+    .canvas .graphic-1 { margin: -70px 0 0 15vw; }
+    .canvas .button--CTA { margin-top: 105vw; }
+    #grafico-barras { top: 27vw; }
+    .item { width: 60vw; }
+    .section--2 article img, .section--2 article div { width: 60vw; }
+    .section--3 article { width: auto; }
+}
+
+@media only screen and (max-width: 430px) { 
+    .canvas .button--CTA { margin-top: 140vw; }
+    #grafico-barras { top: 45vw; }
+    #dolar { top: -30vw; }
+    #grafico-lineas { top: -50vw; }
+    .section--4 .point--5 { margin: 142vw 28vw 0vw 0vw; }
+    .section--4 .point--1 { margin: -83vw 0 0 0vw; }
+    .section--4 .point--2 { margin: -0vw 0px 26vw 36vw; }
+    .pos-2 .pos { right: 1vw; }
 }

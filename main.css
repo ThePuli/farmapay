@@ -1042,13 +1042,13 @@ section.wrapper div.wrapper {
     width: -webkit-fill-available;
     margin-top: 20px;
     margin-bottom: 20px;
-    border: 1px solid black;
+    border-radius: 25px;
+    background: white;
     border-collapse: collapse;
 }
 
 .precios th,
 .precios td {
-    border: 1px solid black;
     fill: black;
     padding: 10px 14px;
     width: 250px;

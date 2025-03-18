@@ -1416,7 +1416,7 @@ input[type=number] {
     .simular { overflow: visible; flex-wrap: nowrap; }
     .simulador--der { padding: 3%; }
     .new-phone { width: 250px; margin-bottom: 25%; }
-    .canvas .button--CTA { margin-top: 100vw; margin-left: 0vw;}
+    .canvas .button--CTA { margin-top: 100vw; margin-left: -33%; }
     .pos { top: 0vw; align-self: anchor-center; right: 10vw; }
     #grafico-lineas { width: 40vw; position: absolute; top: -30vw; left: 10vw; }
     #grafico-barras { width: 40vw; top: 30vw; }
@@ -1448,11 +1448,11 @@ input[type=number] {
 }
 
 @media only screen and (max-width: 549px) { 
-    #grafico-lineas { top: -44vw; }
+    #grafico-lineas { top: -60vw; }
     .hero-title { margin-top: 12vw; }
     .canvas .graphic-1 { margin: -70px 0 0 15vw; }
-    .canvas .button--CTA { margin-top: 105vw; }
-    #grafico-barras { top: 27vw; }
+    .canvas .button--CTA { margin-top: 120vw; margin-left: -45%; }
+    #grafico-barras { top: 34vw; }
     .item { width: 60vw; }
     .section--2 article img, .section--2 article div { width: 60vw; }
     .section--3 article { width: auto; }
@@ -1474,7 +1474,7 @@ input[type=number] {
 }
 
 @media only screen and (max-width: 375px) { 
-    .pos { top: 40vw; }
+    .pos { top: -12vw; }
     #grafico-lineas { top: -80vw; }
     .pos-2 { left: 48vw; }
     .section--4 .point--1 { margin: -42vw 0 0 -23vw; }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,23 +13,26 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/dhm2akc.css">
     <link rel="stylesheet" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
-<body class="precios">
+
+<body>
     <header>
         <main>
-            <div class="logo desktop" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine"><a href="/"><img
-                        src="assets/logo-white.png" alt="logo farmapay"></a></div>
-            <div class="logo mobile" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine"><a href="/"><img
-                        src="assets/logo-icon.svg" alt="logo farmapay"></a></div>
+            <div class="logo desktop" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine"><a
+                    href="/"><img src="assets/logo-white.png" alt="logo farmapay"></a></div>
+            <div class="logo mobile" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine"><a
+                    href="/"><img src="assets/logo-icon.svg" alt="logo farmapay"></a></div>
             <ul class="menu">
                 <li><a href="">Descubre farmapay</a>
                     <ul class="submenu">
-                        <li><a href="index.html#funcionalidades">Funcionalidades</a></li>
-                        <li><a href="index.html#medios">Medios de cobro y comisiones</a></li>
-                        <li><a href="index.html#beneficios">Beneficios</a></li>
+                        <li><a href="#funcionalidades">Funcionalidades</a></li>
+                        <li><a href="#medios">Medios de cobro y comisiones</a></li>
+                        <li><a href="#beneficios">Beneficios</a></li>
                         <li><a target="_blank" href="https://crearcuenta.farmapay.com.ar/">Crear cuenta</a></li>
                     </ul>
                 </li>
@@ -48,85 +52,246 @@
                     href="https://comercios.farmapay.com.ar/login">Ingresá</a></button>
         </div>
     </header>
-    <section class="cabecera wrapper">
-        <div class="wrapper" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">
-            <h3>Te ofrecemos una solución completa para
-                que <b>cobres tus ventas de manera sencilla</b>,
-                sin costos de apertura ni mantenimiento.</h3>
-                <br>
-            <h3 style="font-size: 22px;">Con <b>farmapay </b> pagás únicamente una comisión por cada venta realizada.</h3>
-        </div>
-    </section>
-    <section class="wrapper">
-        <div class="wrapper" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">
-            <br><br>
-            <h3><b>Aceptá pagos con <br>
-                tarjetas de <b class="color--primary">débito</b> y <b class="color--primary">crédito</b></b></h3><br><br>
-            <div style="display: flex; justify-content: space-around;">
-                <img src="assets/cards.png" height="50px">
-            </div>
-        </div>
-    </section>     
-    <section class="cuerpo wrapper">
-        <div class="wrapper" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">
-            <br><br>
-            <h3 class="color--primary"><b>Precios</b></h3>
-            <h4>El costo de comisión y el tiempo de acreditación<br>
-                varía según el medio de pago.</h4>
-            <br><br>
-            <p style="padding: 20px;"><b>Tarjeta de crédito</b></p>
-                <table>
-                    <tr style="border-bottom: 2px solid #f1f1f1;">
-                        <th>Tarjeta</th>
-                        <th>Tasa/Arancel</th>
-                        <th>Plazo de acreditación</th>
-                    </tr>
-                    <tr>
-                        <td>VISA / Mastercard</td>
-                        <td>2,7% + IVA (1)</td>
-                        <td>8 días hábiles</td>
-                    </tr>
-                    <tr>
-                        <td>AMEX</td>
-                        <td>2,7% + IVA (2)</td>
-                        <td>8 días hábiles</td>
-                    </tr>
-                    <tr>
-                        <td>Naranja</td>
-                        <td>2,7% + IVA (1)</td>
-                        <td>Ver detalle (3)</td>
-                    </tr>
-                    <tr>
-                        <td>Cabal</td>
-                        <td>2,7% + IVA (1)</td>
-                        <td>18 días hábiles</td>
-                    </tr>
-                </table>
-
-                <div style="padding: 20px;">
-                    <li>1. Aplica bonificación durante período de prueba de 3 meses, precio final durante la vigencia de la promoción 1,8%+IVA.</li>
-                    <li>2. Aplica bonificación durante período de prueba de 3 meses, precio final durante la vigencia de la promoción 2,25%+IVA.</li>
-                    <li>3. Acreditación Tarjeta Naranja Plan Estándar: Los períodos van desde el día 25 del mes N al día 24 del mes N+1. La fecha de pago a los comercios es el día 14 del mes N+2, llamado FH, Fecha habitual de pago.</li>
+    <section class="hero">
+        <div class="hero-title-responsive">
+            <div data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine">
+                <div class="title--primary" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-sine">
+                    Somos la <b class="color--secondary">solución</br> de cobros</b>
+                    exclusiva para <b class="color--secondary">farmacias</b>
                 </div>
                 <br><br><br>
-
-                <p style="padding: 20px;"><b>Tarjeta de débito</b></p>
-                <table>
-                    <tr style="border-bottom: 2px solid #f1f1f1;">
-                        <th>Tarjeta</th>
-                        <th>Tasa/Arancel</th>
-                        <th>Plazo de acreditación</th>
-                    </tr>
-                    <tr>
-                        <td>VISA / Mastercard / Cabal</td>
-                        <td>1,6% + IVA (1)</td>
-                        <td>24 hs hábiles</td>
-                    </tr>
-                </table>
-
-                <li style="padding: 20px;">1. Aplica bonificación durante período de prueba de 3 meses, precio final durante la vigencia de la promoción 0,8%+IVA.</li>
-                <br><br>
+            </div>
+            <div class="canvas" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
+                <img id="gif-pos" src="assets/gif-pos.gif" alt="" srcset="" width="750">
+                <a class="button--CTA"
+                target="_blank" href="https://crearcuenta.farmapay.com.ar/">Crear cuenta <i>></i></a>
+            </div>
         </div>
+        <div class="hero-title">
+            <div class="title--primary" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-sine">
+                Somos </br> la <b class="color--secondary">solución</br> de cobros</b>
+            </div>
+            <div class="canvas" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
+                <img id="" src="assets/gif-pos.gif" alt="" srcset="" width="750">
+            </div>
+            <div data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine">
+                <div class="title--secondary">
+                    exclusiva para </br> <b class="color--secondary">farmacias</b>
+                </div>
+                <br><br><br>
+                <a class="button--CTA"
+                    target="_blank" href="https://crearcuenta.farmapay.com.ar/">Crear cuenta <i>></i></a>
+            </div>
+        </div>
+        <!--
+        <div class="canvas">
+            <div class="pos">
+                <img class="" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine"
+                    src="assets/POS.svg" alt="" srcset="">
+                <img data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine" id="interior-pos"
+                    src="assets/Interior-POS.gif" alt="" srcset="">
+            </div>
+            <div class="dolar">
+                <img class="" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine" id="dolar"
+                    src="assets/amount.png" alt="" srcset="">
+            </div>
+
+            <div class="graphic-1">
+                <img class="" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine"
+                    id="grafico-barras" src="assets/grafico-de-barras.gif" alt="gráfico de barras" srcset="">
+            </div>
+            <div class="graphic-2">
+                <img class="" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-sine"
+                    id="grafico-lineas" src="assets/grafico-de-linea.gif" alt="gráfico de líneas" srcset="">
+            </div>
+            <a class="button--CTA" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine"
+                target="_blank" href="https://crearcuenta.farmapay.com.ar/">Crear cuenta <i>></i></a>
+        </div>
+        -->
+    </section>
+    <section class="section--1" id="funcionalidades">
+        <br>
+        <h1 class="color--primary" data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in-sine">Cobrá,
+            invertí y gestioná</h1>
+        <h3 data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in-sine">el dinero de tu farmacia</h3>
+        <div class="containner">
+            <div class="left item item--1">
+                <div class="text" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">
+                    Cuenta propia para administrar tu dinero, con posibilidad de inversión y mayor rentabilidad
+                </div>
+                <img id="grafico-card" src="assets/grafico-card.gif" alt="" srcset="">
+            </div>
+            <div class="center doc item">
+                <div class="text" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">
+                    <b> Cobros con todos los medios de pago y mejores plazos de acreditación</b>
+                </div>
+                <div class="pos-2">
+                    <div class="pos">
+                        <img class="" src="assets/POS.svg" alt="" srcset="">
+                        <img id="interior-pos" src="assets/Interior-POS.gif" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+            <div class="right item item--3">
+                <div class="text" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">
+                    Plataforma integral para la gestión y seguimiento de las finanzas de tu farmacia
+                </div>
+                <img id="grafico-notebook" src="assets/grafico-notebook.gif" alt="" srcset="">
+            </div>
+        </div>
+        <div class="containner-responsive">
+            <div class="item item--1">
+                <div class="text" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">
+                    Cuenta propia para administrar tu dinero, con posibilidad de inversión y mayor rentabilidad
+                </div>
+                <img id="grafico-card" src="assets/grafico-card.gif" alt="" srcset="">
+            </div>
+            <div class="item item--2">
+                <div class="text" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">
+                    <b> Cobros con todos los medios de pago y mejores plazos de acreditación</b>
+                </div>
+                <div class="pos-2">
+                    <div class="pos">
+                        <img class="" src="assets/POS.svg" alt="" srcset="">
+                        <img id="interior-pos" src="assets/Interior-POS.gif" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+            <div class="item item--3">
+                <div class="text" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">
+                    Plataforma integral para la gestión y seguimiento de las finanzas de tu farmacia
+                </div>
+                <img id="grafico-notebook" src="assets/grafico-notebook.gif" alt="" srcset="">
+            </div>
+        </div>
+    </section>
+    <section class="section--2" id="beneficios">
+        <h2 data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">Descubrí los beneficios de tener
+            <b class="highlight color--primary">farmapay</b>
+        </h2>
+        <div class="articles">
+            <article class="article--1">
+                <img class="" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-sine"
+                    src="assets/02.png" alt="" srcset="">
+                <div class="" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine">
+                    <h4>Simplicidad
+                        y gestión</h4>
+                    <p>Ahorrá tiempo con conciliaciones
+                        automáticas y descargá reportes
+                        mensuales o diarios para controlar
+                        tus movimientos.</p>
+                </div>
+            </article>
+            <article class="article--2">
+                <img class="" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-sine"
+                    src="assets/03.png" alt="" srcset="">
+                <div class="" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine">
+                    <h4>Rentabilidad
+                        y ganancias</h4>
+                    <p>Pagá menos por cada venta y recibí 
+                        tu dinero al instante. Además, 
+                        invertí el saldo de tu cuenta
+                        para generar rendimientos diarios.</p>
+                </div>
+            </article>
+            <article class="article--3">
+                <img class="" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-sine"
+                    src="assets/01.png" alt="" srcset="">
+                <div class="" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine">
+                    <h4>Visibilidad
+                        y transparencia</h4>
+                    <p>Sabés exactamente cuándo se acredita el dinero de tus ventas.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section class="simulador" id="simulador">
+        <div class="simular">
+            <div class="simulador--izq" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-sine">
+                <img data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine"
+                    src="assets/Recurso 4.png" alt="" srcset="" class="new-phone">
+            </div>
+            <div class="simulador--der" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine">
+                <div class="CTA">
+                    <div class="content">
+                        <h2 style="font-weight: 400; margin-bottom: 2rem;">Sumá <b class="highlight">famapay</b> a tu<br>farmacia y recibí tu POS
+                            <b class="highlight color--primary-dark">100% bonificado</b></h2>
+                        <h4>Sin costo de mantenimiento ni apertura.</h4>
+                    </div>
+                    <button class="simulador--button" style="margin-top: 2rem;">
+                        <a target="_blank" href="https://crearcuenta.farmapay.com.ar/">Crear cuenta </a>
+                        <i style="color: #F1F1F1;
+                        border: 2px solid;
+                        padding: 2px 10px;
+                        margin-left: 10px;
+                        border-color: #F1F1F1;
+                        border-radius: 100%;
+                        cursor: pointer;">></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section--3" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine" id="medios">
+        <br>
+        <h2>Comenzá a cobrar con <b class="highlight color--primary"> farmapay </b></h2>
+        <h4>Ofrecemos múltiples opciones de cobro para que sea fácil y rápido.</h4>
+        <div class="articles">
+            <article class="izq" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-sine">
+                <div class="title">Smart POS farmapay</div>
+                <p>Cobrá con tarjetas de crédito, débito o QR.</p>
+                <br>
+                <ul>
+                    <li>Tecnología 4G y wifi</li>
+                    <li>Impresión de comprobantes</li>
+                    <li>Acepta tarjetas con chip, banda magnética y contactless</li>
+                </ul>
+                <img class="qr" src="assets/qr.gif" alt="qr" srcset="">
+                <button class="qr"><a target="_blank" href="precios.html">Conocer más
+                        <i>></i></a></button>
+            </article>
+            <article class="der" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine">
+                <div class="title">Link de pago</div>
+                <p>Cobrá a distancia, en menos de un minuto y de forma segura a través de Whatsapp, email y canales
+                    digitales.
+                </p>
+                <img class="http" src="assets/http.gif" alt="message http ..." srcset="">
+                <button class="http"><a target="_blank" href="precios.html">Conocer más
+                        <i>></i></a></button>
+            </article>
+        </div>
+    </section>
+    <section class="section--4">
+        <div class="map">
+            <div class="content" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">
+                <h2>Llegamos a
+                    tu farmacia,
+                    donde sea
+                    que esté</h2>
+                <p style="font-size: 18px;"><b class="color--secondary">farmapay</b> está presente
+                    en todo el país.</p>
+            </div>
+            <div class="illustration" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine"><img
+                    id="map" src="assets/map.svg" alt="" srcset=""></div>
+            <div class="point point--1"><img src="assets/logo-icon.svg" data-aos="fade-left" data-aos-duration="800"
+                    data-aos-easing="ease-in-sine" alt="" srcset=""></div>
+            <div class="point point--2"><img src="assets/logo-icon.svg" data-aos="fade-left" data-aos-duration="800"
+                    data-aos-easing="ease-in-sine" alt="" srcset=""></div>
+            <div class="point point--3"><img src="assets/logo-icon.svg" data-aos="fade-left" data-aos-duration="800"
+                    data-aos-easing="ease-in-sine" alt="" srcset=""></div>
+            <div class="point point--4"><img src="assets/logo-icon.svg" data-aos="fade-left" data-aos-duration="800"
+                    data-aos-easing="ease-in-sine" alt="" srcset=""></div>
+            <div class="point point--5"><img src="assets/logo-icon.svg" data-aos="fade-left" data-aos-duration="800"
+                    data-aos-easing="ease-in-sine" alt="" srcset=""></div>
+        </div>
+    </section>
+    <section class="section--5" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine"
+        id="crear-cuenta">
+        <h2 data-aos="fade-down" data-aos-duration="800" data-aos-easing="ease-in-sine">Somos la <b
+                class=" highlight color--primary">plataforma de gestión</b> del ecosistema farmacéutico</h2>
+        <button class="button--CTA" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
+            <a target="_blank" href="https://crearcuenta.farmapay.com.ar/">Crear cuenta </a>
+            <i>></i>
+        </button>
     </section>
     <footer>
         <div class="izq" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-sine">
@@ -136,8 +301,8 @@
                 <a href="https://www.instagram.com/farmapay.ar/"><img src="assets/ig.svg" alt="" srcset=""></a>
                 <a href="https://www.youtube.com/@Farmapay"><img src="assets/yt.svg" alt="" srcset=""></a>
                 <a href="https://www.facebook.com/profile.php?id=61563813801653"><img src="assets/fb.svg" alt=""
-                        srcset=""></a>
-            </div>
+                    srcset=""></a>
+                </div>
             <p><b>Atención al cliente: </b>0800-245-1246</p>
             <h6>Comunicate de forma gratuita de lunes a sábados de 8 a 20hs.</h6>
         </div>
@@ -174,8 +339,94 @@
                     width="280" srcset=""></a>
         </div>
     </footer>
+    <script>
+        AOS.init();
+        const animateList = [].slice.call(document.querySelectorAll('.__animate__animated'))
+
+        animateList.map(function (animateEl) {
+            new Waypoint({
+                element: animateEl,
+                offset: 'bottom-in-view',
+                handler: function (direction) {
+                    //https://stackoverflow.com/a/56914528/3929620
+                    animateEl.className = animateEl.className.replace(/__animate__/g, 'animate__')
+                    this.destroy()
+                },
+            })
+        })
+
+        const animation = lottie.loadAnimation({
+            container: document.getElementById('lottie-animation'), // Contenedor
+            renderer: 'svg', // Renderizado en SVG (también puedes usar canvas o html)
+            loop: true, // Si la animación debe repetirse
+            autoplay: true, // Si debe iniciarse automáticamente
+            path: 'assets/qr.json' // Ruta al archivo JSON
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const inputMonto = document.querySelector(".input input");
+            const selectMedioCobro = document.querySelector(".select select");
+            const amountCobrado = document.querySelector(".result .total .amount");
+            const amountComision = document.querySelector(".result .comission .amount2");
+            const amountRecibir = document.querySelector(".result .total-send .amount");
+            const tiempoAcreditacion = document.querySelector(".result .time .amount");
+            const subtitleComision = document.querySelector(".result .comission .subtitle2");
+
+            const tasasComision = {
+                tdd: { comision: 0.016, tiempo: "24hs", label: "1,6% + IVA" }, // Tarjeta de débito
+                tdc: { comision: 0.027, tiempo: "8 días", label: "2,7% + IVA" }, // Tarjeta de crédito
+                qr: { comision: 0.008, tiempo: "12hs", label: "0,8% + IVA" }   // QR
+            };
+
+            const calcular = () => {
+                const montoVenta = parseFloat(inputMonto.value) || 0;
+                const medioCobro = selectMedioCobro.value;
+
+                if (!tasasComision[medioCobro]) {
+                    return;
+                }
+
+                const { comision, tiempo, label } = tasasComision[medioCobro];
+
+                // Calcular comisiones
+                const montoComision = montoVenta * comision;
+                const iva = montoComision * 0.21; // 21% de IVA sobre la comisión
+                const totalDescuento = montoComision + iva;
+                const totalRecibir = montoVenta - totalDescuento;
+
+                // Actualizar valores en el DOM
+                amountCobrado.textContent = `$${montoVenta.toFixed(2)}`;
+                amountComision.textContent = `- ($${totalDescuento.toFixed(2)})`;
+                amountRecibir.textContent = `$${totalRecibir.toFixed(2)}`;
+                tiempoAcreditacion.textContent = tiempo;
+                subtitleComision.textContent = `(${label})`;
+            };
+
+            // Eventos
+            inputMonto.addEventListener("input", calcular);
+            selectMedioCobro.addEventListener("change", calcular);
+        });
+
+        // Animacion POS
+        const doc = document.querySelector('.doc');
+        const left = document.querySelector('.left');
+        const right = document.querySelector('.right');
+
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY;
+
+            // Cambia el tamaño del div central
+            if (scrollPosition > 800) {
+                doc.classList.add('shrink'); // Achica el div central
+                left.classList.add('visible'); // Muestra el div izquierdo
+                right.classList.add('visible'); // Muestra el div derecho
+            } else {
+                doc.classList.remove('shrink'); // Restaura el tamaño del div central
+                left.classList.remove('visible'); // Oculta el div izquierdo
+                right.classList.remove('visible'); // Oculta el div derecho
+            }
+        });
+    </script>
 </body>
+
 </html>
-<script>
-    AOS.init();
-</script>

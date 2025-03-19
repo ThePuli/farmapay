@@ -1467,7 +1467,7 @@ input[type=number] {
     .section--4 .point--1 { margin: -83vw 0 0 0vw; }
     .section--4 .point--2 { margin: -0vw 0px 26vw 36vw; }
     .pos-2 .pos { right: 1vw; }
-    #gif-pos { width: 360px; margin-top: 8rem; }
+    #gif-pos { width: 360px; margin-top: 8rem; margin-left: -4rem; }
 }
 
 @media only screen and (max-width: 375px) { 

@@ -225,16 +225,14 @@ section {
 }
 
 .hero .canvas {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 8%;
+    margin-top: -10rem;
+    position: absolute;
 }
 
 .title--primary,
 .title--primary b {
     text-align: right;
-    font-size: 2.5vw;
+    font-size: 36px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -243,17 +241,19 @@ section {
 
 .title--primary {
     color: #F1F1F1;
+    z-index: 9;
 }
 
 .title--secondary {
     color: #F1F1F1;
-    padding-top: 12%;
+    padding-top: 10rem;
+    z-index: 9;
 }
 
 .title--secondary,
 .title--secondary b {
     text-align: left;
-    font-size: 2.5vw;
+    font-size: 36px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -261,6 +261,7 @@ section {
 }
 
 .hero .button--CTA {
+    display: inline-block;
     color: #F1F1F1;
     font-size: 18px;
     font-style: normal;
@@ -864,7 +865,7 @@ section {
 }
 
 .section--5 h2 {
-    max-width: 626px;
+    max-width: 650px;
 }
 
 .section--5 .button--CTA {
@@ -1310,6 +1311,9 @@ input[type=number] {
     opacity: 0;
 }
 
+.hero-title { overflow: hidden; }
+.hero-title-responsive { display: none; }
+
 /* RESPONSIVE */
 @media only screen and (max-width: 1300px) {
     .left.visible { left: 6vw; }
@@ -1373,7 +1377,7 @@ input[type=number] {
     .containner { display: none; }
     .containner-responsive { display: flow; }
     .item { margin-top: 2rem; margin-bottom: 2rem; width: 40vw; }
-    .pos-2 { top: -20vw; left: 40vw; }
+    .pos-2 { top: -20vw; right: -45%; left: 45%; }
     .section--1 { justify-items: center; }
     .pos { top: 30vw; right: 42vw; }
     .pos-2 .pos { position: absolute; right: 11vw; top: 5vw; }
@@ -1385,10 +1389,10 @@ input[type=number] {
     .containner { display: none; }
     .containner-responsive { display: flow; }
     .item { margin-top: 2rem; margin-bottom: 2rem; width: 40vw; }
-    .pos-2 { top: -20vw; left: 40vw; }
+    .pos-2 { top: -20vw; }
     .section--1 { justify-items: center; }
     .pos { top: 30vw; right: 42vw; }
-    .pos-2 .pos { position: absolute; right: 11vw; top: 5vw; }
+    .pos-2 .pos { position: absolute; right: 6rem; }
     .canvas .button--CTA { margin-left: 50%; }
     .canvas .graphic-2 { margin: 0 0 -30vw -40vw; }
     .section--2 article { gap: 4vw; }
@@ -1400,6 +1404,8 @@ input[type=number] {
 @media only screen and (max-width: 768px) {
     .menu { display: none; }
     section { padding: 50px !important; }
+    .hero-title { display: none; }
+    .hero-title-responsive { display: flow; }
     .section--4 .point--5 { margin: 111vw 28vw 0vw 0vw; }
     .section--4 .point--4 { margin: 100vw 0vw 25vw -10vw; }
     .section--4 .point--3 { margin: 20vw 0 0 -40vw; }
@@ -1416,25 +1422,25 @@ input[type=number] {
     .simular { overflow: visible; flex-wrap: nowrap; }
     .simulador--der { padding: 3%; }
     .new-phone { width: 250px; margin-bottom: 25%; }
-    .canvas .button--CTA { margin-top: 100vw; margin-left: -33%; }
+    .canvas .button--CTA { margin-top: -2rem; }
     .pos { top: 0vw; align-self: anchor-center; right: 10vw; }
     #grafico-lineas { width: 40vw; position: absolute; top: -30vw; left: 10vw; }
     #grafico-barras { width: 40vw; top: 30vw; }
     #dolar { width: 15vw; top: -20vw; left: 20vw; }
     .title--primary, .title--primary b { font-size: 5vw !important; text-align: left; }
     .title--secondary, .title--secondary b { font-size: 5vw !important; }
-    .hero-title { gap: 0vw; display: table-caption; }
     .title--secondary { padding-top: 0%; }
     header { gap: 0; }
     .faq .cabecera img { display: none ; }
+    .canvas { text-align: center; }
 
     /* responsive POS */
     .containner { display: none; }
     .containner-responsive { display: flow; }
-    .item { margin-top: 2rem; margin-bottom: 2rem;  width: 40vw; }
-    .pos-2 { top: -20vw; left: 40vw; }
+    .item { margin-top: 2rem; margin-bottom: 2rem;  width: 18rem; }
+    .pos-2 { top: -20vw; left: 60%; }
     .section--1 { justify-items: center; }
-    .hero .canvas { margin-top: -95%; }
+    #gif-pos { width: 500px; margin-top: 6rem; }
 }
 
 @media only screen and (max-width: 642px) {
@@ -1448,32 +1454,24 @@ input[type=number] {
 }
 
 @media only screen and (max-width: 549px) { 
-    #grafico-lineas { top: -60vw; }
     .hero-title { margin-top: 12vw; }
     .canvas .graphic-1 { margin: -70px 0 0 15vw; }
-    .canvas .button--CTA { margin-top: 120vw; margin-left: -45%; }
-    #grafico-barras { top: 34vw; }
     .item { width: 60vw; }
     .section--2 article img, .section--2 article div { width: 60vw; }
     .section--3 article { width: auto; }
 }
 
 @media only screen and (max-width: 430px) { 
-    .canvas .button--CTA { margin-top: 140vw; }
-    #grafico-barras { top: 45vw; }
-    #dolar { top: -30vw; }
-    #grafico-lineas { top: -50vw; }
+    .canvas .button--CTA { margin-top: 5rem; margin-left: -3rem; }
     .section--4 .point--5 { margin: 142vw 28vw 0vw 0vw; }
     .section--4 .point--1 { margin: -83vw 0 0 0vw; }
     .section--4 .point--2 { margin: -0vw 0px 26vw 36vw; }
     .pos-2 .pos { right: 1vw; }
-}
-
-@media only screen and (max-width: 390px) { 
-    #grafico-lineas { top: -77vw; }
+    #gif-pos { width: 360px; margin-top: 8rem; }
 }
 
 @media only screen and (max-width: 375px) { 
+    .canvas .button--CTA { margin-left: -2rem; }
     .pos { top: -12vw; }
     #grafico-lineas { top: -80vw; }
     .pos-2 { left: 48vw; }
@@ -1484,7 +1482,5 @@ input[type=number] {
     .canvas .graphic-2 { margin: 0 0 -47vw -32vw; }
     #dolar { top: -45vw; }
     .canvas .button--CTA { margin-top: 158vw; }
-    #grafico-lineas { top: -105vw; }
-    #grafico-barras { top: 47vw; left: -40vw; }
     .section--3 article { width: 65vw; }
 }

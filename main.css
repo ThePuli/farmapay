@@ -1467,6 +1467,11 @@ input[type=number] {
     .canvas .button--CTA { margin-left: 0rem; }
 }
 
+@media only screen and (max-width: 431px) { 
+    .canvas .button--CTA { margin-top: 1rem; margin-left: -3rem; }
+    #gif-pos { width: 450px; margin-top: 8rem; margin-left: -4rem; }
+}
+
 @media only screen and (max-width: 430px) { 
     .canvas .button--CTA { margin-top: 1rem; margin-left: -3rem; }
     .section--4 .point--5 { margin: 142vw 28vw 0vw 0vw; }

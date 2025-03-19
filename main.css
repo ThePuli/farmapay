@@ -1459,15 +1459,21 @@ input[type=number] {
     .item { width: 60vw; }
     .section--2 article img, .section--2 article div { width: 60vw; }
     .section--3 article { width: auto; }
+    #gif-pos { margin-top: 8rem; margin-left: -4rem; }
+}
+
+@media only screen and (max-width: 490px) { 
+    #gif-pos {  width: 450px; margin-top: 8rem; margin-left: -4rem; }
+    .canvas .button--CTA { margin-left: 0rem; }
 }
 
 @media only screen and (max-width: 430px) { 
-    .canvas .button--CTA { margin-top: 5rem; margin-left: -3rem; }
+    .canvas .button--CTA { margin-top: 1rem; margin-left: -3rem; }
     .section--4 .point--5 { margin: 142vw 28vw 0vw 0vw; }
     .section--4 .point--1 { margin: -83vw 0 0 0vw; }
     .section--4 .point--2 { margin: -0vw 0px 26vw 36vw; }
     .pos-2 .pos { right: 1vw; }
-    #gif-pos { width: 360px; margin-top: 8rem; margin-left: -4rem; }
+    #gif-pos { width: 450px; margin-top: 8rem; margin-left: -4rem; }
 }
 
 @media only screen and (max-width: 375px) { 

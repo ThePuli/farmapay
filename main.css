@@ -1012,6 +1012,8 @@ section.wrapper div.wrapper {
 
 /* PRECIOS */
 
+.cards { height: 60px; }
+
 .precios .logos {
     display: flex;
     justify-content: center;
@@ -1427,8 +1429,6 @@ input[type=number] {
     #grafico-lineas { width: 40vw; position: absolute; top: -30vw; left: 10vw; }
     #grafico-barras { width: 40vw; top: 30vw; }
     #dolar { width: 15vw; top: -20vw; left: 20vw; }
-    .title--primary, .title--primary b { font-size: 5vw !important; text-align: left; }
-    .title--secondary, .title--secondary b { font-size: 5vw !important; }
     .title--secondary { padding-top: 0%; }
     header { gap: 0; }
     .faq .cabecera img { display: none ; }
@@ -1451,6 +1451,7 @@ input[type=number] {
     .new-phone { width: 0vw; }
     .section--3 .articles { display: grid; }
     .section--3 button.http { margin-top: 5vw !important; }
+    .cards { height: 50px; }
 }
 
 @media only screen and (max-width: 549px) { 
@@ -1459,39 +1460,86 @@ input[type=number] {
     .item { width: 60vw; }
     .section--2 article img, .section--2 article div { width: 60vw; }
     .section--3 article { width: auto; }
-    #gif-pos { margin-top: 8rem; margin-left: -4rem; }
+    #gif-pos { width: 28rem; }
+    .canvas .button--CTA { margin-left: 12rem; }
+    .pos-2 { left: 45%; }
 }
 
 @media only screen and (max-width: 490px) { 
     #gif-pos {  width: 450px; margin-top: 8rem; margin-left: -4rem; }
     .canvas .button--CTA { margin-left: 0rem; }
+    .cards { height: 45px; }
+}
+
+@media only screen and (max-width: 490px) { 
+    #gif-pos {  width: 400px; margin-top: 8rem; margin-left: -4rem; }
+}
+
+@media only screen and (max-width: 455px) {
+    #gif-pos { width: 360px; margin-top: 6rem; }
 }
 
 @media only screen and (max-width: 431px) { 
-    .canvas .button--CTA { margin-top: 1rem; margin-left: -3rem; }
-    #gif-pos { width: 450px; margin-top: 8rem; margin-left: -4rem; }
+    .canvas .button--CTA { margin-top: -1rem; margin-left: 6rem; }
+    #gif-pos { width: 22rem; margin-top: 8rem; margin-left: -4rem; }
+    .logo-icon { width: 6rem; }
 }
 
 @media only screen and (max-width: 430px) { 
-    .canvas .button--CTA { margin-top: 1rem; margin-left: -3rem; }
+    .canvas .button--CTA { margin-top: -2rem; margin-left: 8rem; }
     .section--4 .point--5 { margin: 142vw 28vw 0vw 0vw; }
     .section--4 .point--1 { margin: -83vw 0 0 0vw; }
     .section--4 .point--2 { margin: -0vw 0px 26vw 36vw; }
     .pos-2 .pos { right: 1vw; }
-    #gif-pos { width: 450px; margin-top: 8rem; margin-left: -4rem; }
+    .pos-2 { left: 2rem; }
+    #gif-pos { width: 350px; margin-top: 8rem; margin-left: -4rem; }
+    .cards { height: 40px; }
+    section { padding: 40px !important; }
+}
+
+@media only screen and (max-width: 380px) { 
+    .canvas .button--CTA { padding: 0.8rem; }
+    #gif-pos { width: 300px; margin-top: 8rem; margin-left: -4rem; }
+    section { padding: 40px !important; }
 }
 
 @media only screen and (max-width: 375px) { 
     .canvas .button--CTA { margin-left: -2rem; }
     .pos { top: -12vw; }
-    #grafico-lineas { top: -80vw; }
-    .pos-2 { left: 48vw; }
+    .logo-icon { width: 5rem; }
+    .pos-2 { left: 4rem; }
+    #gif-pos { width: 16rem; }
     .section--4 .point--1 { margin: -42vw 0 0 -23vw; }
+    section { padding: 44px !important; }
 }
 
 @media only screen and (max-width: 360px) { 
     .canvas .graphic-2 { margin: 0 0 -47vw -32vw; }
-    #dolar { top: -45vw; }
-    .canvas .button--CTA { margin-top: 158vw; }
+    .canvas .button--CTA { margin-top: -1rem; margin-left: 1rem; }
     .section--3 article { width: 65vw; }
+    .cards { height: 30px; }
+    #gif-pos { width: 18rem; }
+    .pos-2 { left: 4rem; }
+    .logo-icon { width: 5rem; }
+    .section--4 .point--5 { margin: 40rem 28vw 0vw 0vw; }
+    .section--4 .point--4 { margin: 30rem 0vw 25vw -10vw; }
+    .section--4 .point--3 { margin: 153 0 0 -40vw; }
+    .section--4 .point--2 { margin: 8rem 0px 26vw 36vw; }
+    .section--4 .point--1 { margin: 40 0 0 -23vw; }
+    .section--5 .button--CTA { padding: 10px 10px 10px 20px; }
+}
+
+@media only screen and (max-width: 300px) { 
+    #gif-pos { width: 300px; }
+    .canvas .button--CTA { margin-top: -15px }
+    .item { width: 72vw; }
+    .pos-2 { left: 22vw; }
+    .section--3 button { padding: 10px; }
+    .logo-icon { width: 4rem; }
+    .section--4 .point--5 { margin: 216vw 28vw 0vw 0vw; }
+    .section--4 .point--4 { margin: 122vw 0vw 25vw -10vw; }
+    .section--4 .point--3 { margin: 152vw 0 0 -40vw; }
+    .section--4 .point--2 { margin: 88vw 0px 26vw 36vw; }
+    .section--4 .point--1 { margin: 40vw 0 0 -23vw; }
+    .section--5 .button--CTA { padding: 10px 10px 10px 20px; }
 }

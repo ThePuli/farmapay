@@ -867,7 +867,8 @@ section {
     align-items: center;
     justify-content: center;
     align-content: center;
-    gap: 27px
+    gap: 27px-;
+    text-align-last: center;
 }
 
 .section--5 h2 {

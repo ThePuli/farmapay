@@ -10,6 +10,12 @@ html {
     margin: 0;
 }
 
+html,
+body{
+width:100%;
+overflow-x:hidden;
+}
+
 a {
     text-decoration: none;
     color: inherit;

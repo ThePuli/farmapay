@@ -14,28 +14,46 @@
 <body>
     <header>
         <main>
-            <div class="logo desktop"><a href="/"><img src="assets/logo-white.png" alt="logo farmapay"></a></div>
-            <div class="logo mobile"><a href="/"><img src="assets/logo-icon.svg" alt="logo farmapay"></a></div>
+            <div class="logo desktop" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine"><a
+                    href="/"><img src="assets/logo-white.png" alt="logo farmapay"></a></div>
+            <div class="logo mobile" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine"><a
+                    href="/"><img src="assets/logo-icon.svg" alt="logo farmapay"></a></div>
             <ul class="menu">
                 <li><a href="">Descubre farmapay</a>
                     <ul class="submenu">
-                        <li><a href="index.html#funcionalidades">Funcionalidades</a></li>
-                        <li><a href="index.html#medios">Medios de cobro y comisiones</a></li>
-                        <li><a href="index.html#beneficios">Beneficios</a></li>
+                        <li><a href="#funcionalidades">Funcionalidades</a></li>
+                        <li><a href="#medios">Medios de cobro y comisiones</a></li>
+                        <li><a href="#beneficios">Beneficios</a></li>
                         <li><a target="_blank" href="https://crearcuenta.farmapay.com.ar/">Crear cuenta</a></li>
                     </ul>
                 </li>
                 <li><a href="">Ayuda</a>
                     <ul class="submenu">
                         <li><a href="faq.html">Preguntas frecuentes</a></li>
-                        <li><a href="https://odoo.farmapay.com.ar/helpdesk/farmapay-portal-200">Atención al cliente</a></li>
+                        <li><a href="https://odoo.farmapay.com.ar/helpdesk/farmapay-portal-200">Atención al cliente</a>
+                        </li>
                     </ul>
                 </li>
             </ul>
         </main>
-        <div class="buttons">
-            <button class="button--secondary"><a href="https://comercios.farmapay.com.ar/">Crear cuenta</a></button>
-            <button class="button--primary"><a href="https://comercios.farmapay.com.ar/login">Ingresá</a></button>
+        <div class="buttons" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">
+            <button class="button--secondary hidden"><a target="_blank" href="https://crearcuenta.farmapay.com.ar/">Crear
+                    cuenta</a></button>
+            <span class="hamburguer" style="font-size:30px;cursor:pointer;display: contents;" onclick="openNav()">&#9776; </span>
+            <button class="button--primary"><a target="_blank"
+                    href="https://comercios.farmapay.com.ar/login">Ingresá</a></button>
+        </div>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="#funcionalidades" onclick="closeNav()"><b>Funcionalidades</b></a>
+              <a href="#medios" onclick="closeNav()"><b>Medios de cobro y comisiones</b></a>
+              <a href="#beneficios" onclick="closeNav()"><b>Beneficios</b></a>
+              <a href="https://crearcuenta.farmapay.com.ar/" onclick="closeNav()"><b>Crear cuenta</b></a>
+              <a href="#faq" onclick="closeNav()"><b>Preguntas frecuentes</b></a>
+              <a href="#faq" onclick="closeNav()"><b>Atención al cliente</b></a>
+            </div>
         </div>
     </header>
     <section class="cabecera wrapper">

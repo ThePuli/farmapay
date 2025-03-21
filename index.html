@@ -48,8 +48,21 @@
         <div class="buttons" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">
             <button class="button--secondary hidden"><a target="_blank" href="https://crearcuenta.farmapay.com.ar/">Crear
                     cuenta</a></button>
+            <span class="hamburguer" style="font-size:30px;cursor:pointer;display: contents;" onclick="openNav()">&#9776; </span>
             <button class="button--primary"><a target="_blank"
                     href="https://comercios.farmapay.com.ar/login">Ingresá</a></button>
+        </div>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="#funcionalidades" onclick="closeNav()"><b>Funcionalidades</b></a>
+              <a href="#medios" onclick="closeNav()"><b>Medios de cobro y comisiones</b></a>
+              <a href="#beneficios" onclick="closeNav()"><b>Beneficios</b></a>
+              <a href="https://crearcuenta.farmapay.com.ar/" onclick="closeNav()"><b>Crear cuenta</b></a>
+              <a href="#faq" onclick="closeNav()"><b>Preguntas frecuentes</b></a>
+              <a href="#faq" onclick="closeNav()"><b>Atención al cliente</b></a>
+            </div>
         </div>
     </header>
     <section class="hero">
@@ -429,6 +442,14 @@
                 right.classList.remove('visible'); // Oculta el div derecho
             }
         });
+
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
     </script>
 </body>
 

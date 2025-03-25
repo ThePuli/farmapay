@@ -1635,25 +1635,14 @@ input[type=number] {
         width: 40vw;
     }
 
-    .pos-2 {
-        top: -20vw;
-        right: -45%;
-        left: 45%;
-    }
-
     .section--1 {
         justify-items: center;
     }
 
-    .pos {
-        top: 30vw;
-        right: 42vw;
-    }
-
-    .pos-2 .pos {
-        position: absolute;
-        right: 11vw;
-        top: 5vw;
+    .pos-2 {
+        position: relative !important;
+        left: 60vw;
+        top: -100px;
     }
 
     .canvas .button--CTA {
@@ -1680,22 +1669,12 @@ input[type=number] {
         width: 40vw;
     }
 
-    .pos-2 {
-        top: -20vw;
-    }
-
     .section--1 {
         justify-items: center;
     }
 
-    .pos {
-        top: 30vw;
-        right: 42vw;
-    }
-
-    .pos-2 .pos {
+    .pos-2 {
         position: absolute;
-        right: 6rem;
     }
 
     .canvas .button--CTA {
@@ -1829,12 +1808,6 @@ input[type=number] {
         margin-left: 0%;
     }
 
-    .pos {
-        top: 0vw;
-        align-self: anchor-center;
-        right: 10vw;
-    }
-
     #grafico-lineas {
         width: 40vw;
         position: absolute;
@@ -1882,11 +1855,6 @@ input[type=number] {
         margin-top: 2rem;
         margin-bottom: 2rem;
         width: 18rem;
-    }
-
-    .pos-2 {
-        top: -20vw;
-        left: 60%;
     }
 
     .section--1 {
@@ -1964,7 +1932,8 @@ input[type=number] {
     }
 
     .pos-2 {
-        left: 45%;
+        left: 110%;
+        top: -50px;
     }
 }
 
@@ -2033,13 +2002,10 @@ input[type=number] {
     .section--4 .point--2 {
         margin: -0vw 0px 26vw 36vw;
     }
-
-    .pos-2 .pos {
-        right: 1vw;
-    }
-
+    
     .pos-2 {
-        left: 2rem;
+        right: -25vw;
+        left: 65vw;
     }
 
     #gif-pos {
@@ -2079,16 +2045,12 @@ input[type=number] {
         margin-left: 0%;
     }
 
-    .pos {
-        top: -12vw;
-    }
-
     .logo-icon {
         width: 5rem;
     }
 
     .pos-2 {
-        left: 4rem;
+        left: 17rem;
     }
 
     #gif-pos {
@@ -2127,7 +2089,7 @@ input[type=number] {
     }
 
     .pos-2 {
-        left: 4rem;
+        left: 16rem;
     }
 
     .logo-icon {
@@ -2173,7 +2135,7 @@ input[type=number] {
     }
 
     .pos-2 {
-        left: 22vw;
+        left: 14rem;
     }
 
     .section--3 button {

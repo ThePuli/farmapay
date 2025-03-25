@@ -1743,7 +1743,7 @@ input[type=number] {
         padding: 50px !important;
     }
 
-    .title--primary, .title--primary b { font-size: 26px; margin-bottom: 2rem; }
+    .title--primary, .title--primary b { font-size: 26px; margin-bottom: 2rem; text-align: -webkit-center; }
     h1, h2, h2 .highlight { font-size: 26px; }
     h3 { font-size: 22px; }
     h4 { font-size: 20px; }
@@ -1826,6 +1826,7 @@ input[type=number] {
 
     .canvas .button--CTA {
         margin-top: -2rem;
+        margin-left: 0%;
     }
 
     .pos {
@@ -1959,7 +1960,7 @@ input[type=number] {
     }
 
     .canvas .button--CTA {
-        margin-left: 12rem;
+        margin-left: 0%;
     }
 
     .pos-2 {
@@ -1975,7 +1976,7 @@ input[type=number] {
     }
 
     .canvas .button--CTA {
-        margin-left: 0rem;
+        margin-left: 0%;
     }
 
     .cards {
@@ -2001,7 +2002,7 @@ input[type=number] {
 @media only screen and (max-width: 431px) {
     .canvas .button--CTA {
         margin-top: -1rem;
-        margin-left: 6rem;
+        margin-left: 0%;
     }
 
     #gif-pos {
@@ -2018,7 +2019,7 @@ input[type=number] {
 @media only screen and (max-width: 430px) {
     .canvas .button--CTA {
         margin-top: -2rem;
-        margin-left: 8rem;
+        margin-left: 0%;
     }
 
     .section--4 .point--5 {
@@ -2059,6 +2060,7 @@ input[type=number] {
 @media only screen and (max-width: 380px) {
     .canvas .button--CTA {
         padding: 0.8rem;
+        margin-left: 0%;
     }
 
     #gif-pos {
@@ -2074,7 +2076,7 @@ input[type=number] {
 
 @media only screen and (max-width: 375px) {
     .canvas .button--CTA {
-        margin-left: -2rem;
+        margin-left: 0%;
     }
 
     .pos {
@@ -2109,7 +2111,7 @@ input[type=number] {
 
     .canvas .button--CTA {
         margin-top: -1rem;
-        margin-left: 1rem;
+        margin-left: 0%;
     }
 
     .section--3 article {

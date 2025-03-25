@@ -1754,6 +1754,7 @@ input[type=number] {
 
     .hero-title-responsive {
         display: flow;
+        text-align-last: center;
     }
 
     .section--4 .point--5 {

@@ -1722,6 +1722,13 @@ input[type=number] {
         padding: 50px !important;
     }
 
+    .section--4 {
+        background-attachment: unset;
+        position: relative;
+        background-position: center;
+        background-image: url(assets/Rectangle.png);
+    }
+
     .title--primary, .title--primary b { font-size: 26px; margin-bottom: 2rem; text-align: -webkit-center; }
     h1, h2, h2 .highlight { font-size: 26px; }
     h3 { font-size: 22px; }
